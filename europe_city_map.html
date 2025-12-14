@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_5136c4998cd03b6fb7da76c834f74199 {
+                #map_a001536f7fbe0c77e61ceecd6189b328 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +54,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_5136c4998cd03b6fb7da76c834f74199" ></div>
+            <div class="folium-map" id="map_a001536f7fbe0c77e61ceecd6189b328" ></div>
         
 </body>
 <script>
     
     
-            var map_5136c4998cd03b6fb7da76c834f74199 = L.map(
-                "map_5136c4998cd03b6fb7da76c834f74199",
+            var map_a001536f7fbe0c77e61ceecd6189b328 = L.map(
+                "map_a001536f7fbe0c77e61ceecd6189b328",
                 {
                     center: [54.526, 15.2551],
                     crs: L.CRS.EPSG3857,
@@ -79,7 +79,6 @@
   "zoom": 4,
   "zoomControl": true,
   "preferCanvas": false,
-  "maxBoundsViscosity": 1.0,
   "maxBounds": [
 [
 34.0,
@@ -90,6 +89,7 @@
 45.0,
 ],
 ],
+  "maxBoundsViscosity": 1.0,
 }
 
                 }
@@ -99,12 +99,12 @@
 
         
     
-            var tile_layer_0514c2491c820c93c16ffddd064c4d0e = L.tileLayer(
+            var tile_layer_ce219fe617495af91925d591c18ec16c = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
-  "minZoom": 0,
-  "maxZoom": 19,
-  "maxNativeZoom": 19,
+  "minZoom": 4,
+  "maxZoom": 12,
+  "maxNativeZoom": 12,
   "noWrap": false,
   "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
   "subdomains": "abc",
@@ -116,40 +116,74 @@
             );
         
     
-            tile_layer_0514c2491c820c93c16ffddd064c4d0e.addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            tile_layer_ce219fe617495af91925d591c18ec16c.addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-            map_5136c4998cd03b6fb7da76c834f74199.fitBounds(
+            map_a001536f7fbe0c77e61ceecd6189b328.fitBounds(
                 [[34.0, -25.0], [72.0, 45.0]],
                 {}
             );
         
     
-            var marker_1c850c33808bbd7f3b15958bb750c122 = L.marker(
-                [48.20833, 16.3725],
+            var marker_ab62dadd6525c25bbb005ad959ff5736 = L.marker(
+                [47.8, 13.045],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_99d7100ecb4e6834486bd94431aa4455 = L.popup({
+        var popup_c6d7ece1035550f021742855acb0c77d = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_10fe2d2797100482a603a5346851e977 = $(`<div id="html_10fe2d2797100482a603a5346851e977" style="width: 100.0%; height: 100.0%;">     <b>Vienna, Austria</b><br>     Population: 2983513<br>     Avg Monthly Salary: 2500 €<br>     Avg Cost of Living: 2061 €     </div>`)[0];
-                popup_99d7100ecb4e6834486bd94431aa4455.setContent(html_10fe2d2797100482a603a5346851e977);
+                var html_d5fd6a5d6b267026f0f1222ab89b6534 = $(`<div id="html_d5fd6a5d6b267026f0f1222ab89b6534" style="width: 100.0%; height: 100.0%;">     <b>Salzburg, Austria</b><br>     Population: 375489<br>     Avg Monthly Salary: 3200 €<br>     Avg Cost of Living: 2186 €     </div>`)[0];
+                popup_c6d7ece1035550f021742855acb0c77d.setContent(html_d5fd6a5d6b267026f0f1222ab89b6534);
             
         
 
-        marker_1c850c33808bbd7f3b15958bb750c122.bindPopup(popup_99d7100ecb4e6834486bd94431aa4455)
+        marker_ab62dadd6525c25bbb005ad959ff5736.bindPopup(popup_c6d7ece1035550f021742855acb0c77d)
         ;
 
         
     
     
-            marker_1c850c33808bbd7f3b15958bb750c122.bindTooltip(
+            marker_ab62dadd6525c25bbb005ad959ff5736.bindTooltip(
+                `<div>
+                     Salzburg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_67531986f19364b9d14668e7dd22709e = L.marker(
+                [48.20833, 16.3725],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_c31363e7e364dcd5c2ad02410f3fc9ff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_644711a406cf5991edc1ab2f86d53320 = $(`<div id="html_644711a406cf5991edc1ab2f86d53320" style="width: 100.0%; height: 100.0%;">     <b>Vienna, Austria</b><br>     Population: 2983513<br>     Avg Monthly Salary: 2500 €<br>     Avg Cost of Living: 2061 €     </div>`)[0];
+                popup_c31363e7e364dcd5c2ad02410f3fc9ff.setContent(html_644711a406cf5991edc1ab2f86d53320);
+            
+        
+
+        marker_67531986f19364b9d14668e7dd22709e.bindPopup(popup_c31363e7e364dcd5c2ad02410f3fc9ff)
+        ;
+
+        
+    
+    
+            marker_67531986f19364b9d14668e7dd22709e.bindTooltip(
                 `<div>
                      Vienna
                  </div>`,
@@ -159,65 +193,31 @@
             );
         
     
-            var marker_6c04749b853505087574a276ad36a4e7 = L.marker(
-                [50.84667, 4.3525],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_2c7f71862b9d3d1f4d1e67d9edb90893 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_679a737d508eaadb581f2dfb1b97feff = $(`<div id="html_679a737d508eaadb581f2dfb1b97feff" style="width: 100.0%; height: 100.0%;">     <b>Brussels, Belgium</b><br>     Population: 3284548<br>     Avg Monthly Salary: 3350 €<br>     Avg Cost of Living: 1900 €     </div>`)[0];
-                popup_2c7f71862b9d3d1f4d1e67d9edb90893.setContent(html_679a737d508eaadb581f2dfb1b97feff);
-            
-        
-
-        marker_6c04749b853505087574a276ad36a4e7.bindPopup(popup_2c7f71862b9d3d1f4d1e67d9edb90893)
-        ;
-
-        
-    
-    
-            marker_6c04749b853505087574a276ad36a4e7.bindTooltip(
-                `<div>
-                     Brussels
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_9cc09a7b7e3938ec0cbbf062ce8519ae = L.marker(
+            var marker_2c2d46f263aa0169f7563501a922a7c2 = L.marker(
                 [51.21778, 4.40028],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_36bffc70de06a2e35f45721f535658d7 = L.popup({
+        var popup_db36db1e50cda95a4100165401ccbbd5 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_fbf0a481a91d59fc8a80630fb9c66383 = $(`<div id="html_fbf0a481a91d59fc8a80630fb9c66383" style="width: 100.0%; height: 100.0%;">     <b>Antwerp, Belgium</b><br>     Population: 1139663<br>     Avg Monthly Salary: 2609 €<br>     Avg Cost of Living: 1953 €     </div>`)[0];
-                popup_36bffc70de06a2e35f45721f535658d7.setContent(html_fbf0a481a91d59fc8a80630fb9c66383);
+                var html_4d12c3033a1b92129deeecdb9efb8dad = $(`<div id="html_4d12c3033a1b92129deeecdb9efb8dad" style="width: 100.0%; height: 100.0%;">     <b>Antwerp, Belgium</b><br>     Population: 1139663<br>     Avg Monthly Salary: 2609 €<br>     Avg Cost of Living: 1953 €     </div>`)[0];
+                popup_db36db1e50cda95a4100165401ccbbd5.setContent(html_4d12c3033a1b92129deeecdb9efb8dad);
             
         
 
-        marker_9cc09a7b7e3938ec0cbbf062ce8519ae.bindPopup(popup_36bffc70de06a2e35f45721f535658d7)
+        marker_2c2d46f263aa0169f7563501a922a7c2.bindPopup(popup_db36db1e50cda95a4100165401ccbbd5)
         ;
 
         
     
     
-            marker_9cc09a7b7e3938ec0cbbf062ce8519ae.bindTooltip(
+            marker_2c2d46f263aa0169f7563501a922a7c2.bindTooltip(
                 `<div>
                      Antwerp
                  </div>`,
@@ -227,65 +227,31 @@
             );
         
     
-            var marker_45f538ed3f23b50d1ede2555c69cabed = L.marker(
-                [51.05361, 3.72528],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_fc523b9572a0570caf80b02f92a792fe = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_fc8cf97e3154fa6f44d8b32994248e0c = $(`<div id="html_fc8cf97e3154fa6f44d8b32994248e0c" style="width: 100.0%; height: 100.0%;">     <b>Gent, Belgium</b><br>     Population: 645813<br>     Avg Monthly Salary: 2400 €<br>     Avg Cost of Living: 1200 €     </div>`)[0];
-                popup_fc523b9572a0570caf80b02f92a792fe.setContent(html_fc8cf97e3154fa6f44d8b32994248e0c);
-            
-        
-
-        marker_45f538ed3f23b50d1ede2555c69cabed.bindPopup(popup_fc523b9572a0570caf80b02f92a792fe)
-        ;
-
-        
-    
-    
-            marker_45f538ed3f23b50d1ede2555c69cabed.bindTooltip(
-                `<div>
-                     Gent
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_beaa0cd543218b68053b6437dc296b38 = L.marker(
+            var marker_7de9887cc5fad33848e82793f6a595b4 = L.marker(
                 [51.20889, 3.22417],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_7cee002b085e68a01d54c2a81ff28fae = L.popup({
+        var popup_0d5d20f913af4bd33edd303fc383c171 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_e9054bb5dbd0ef3d5ffd715e1c5e489f = $(`<div id="html_e9054bb5dbd0ef3d5ffd715e1c5e489f" style="width: 100.0%; height: 100.0%;">     <b>Bruges, Belgium</b><br>     Population: 119765<br>     Avg Monthly Salary: 2700 €<br>     Avg Cost of Living: 1708 €     </div>`)[0];
-                popup_7cee002b085e68a01d54c2a81ff28fae.setContent(html_e9054bb5dbd0ef3d5ffd715e1c5e489f);
+                var html_98b59118d9748317981406f61b23c3ab = $(`<div id="html_98b59118d9748317981406f61b23c3ab" style="width: 100.0%; height: 100.0%;">     <b>Bruges, Belgium</b><br>     Population: 119765<br>     Avg Monthly Salary: 2700 €<br>     Avg Cost of Living: 1708 €     </div>`)[0];
+                popup_0d5d20f913af4bd33edd303fc383c171.setContent(html_98b59118d9748317981406f61b23c3ab);
             
         
 
-        marker_beaa0cd543218b68053b6437dc296b38.bindPopup(popup_7cee002b085e68a01d54c2a81ff28fae)
+        marker_7de9887cc5fad33848e82793f6a595b4.bindPopup(popup_0d5d20f913af4bd33edd303fc383c171)
         ;
 
         
     
     
-            marker_beaa0cd543218b68053b6437dc296b38.bindTooltip(
+            marker_7de9887cc5fad33848e82793f6a595b4.bindTooltip(
                 `<div>
                      Bruges
                  </div>`,
@@ -295,31 +261,99 @@
             );
         
     
-            var marker_e08aa3e146b20693725769f94198bc7a = L.marker(
-                [43.567, 27.833],
+            var marker_866cf2f4c3b700fe1eae3b1e4a165b20 = L.marker(
+                [50.84667, 4.3525],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_e41db7a77f65e17ad255c9782e472501 = L.popup({
+        var popup_e5840c1db28bba7634dab57e86cfba25 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_8675ba8d2df4e6f23c035495441ec30d = $(`<div id="html_8675ba8d2df4e6f23c035495441ec30d" style="width: 100.0%; height: 100.0%;">     <b>Dobrich, Bulgaria</b><br>     Population: 73895<br>     Avg Monthly Salary: 1200 €<br>     Avg Cost of Living: 1100 €     </div>`)[0];
-                popup_e41db7a77f65e17ad255c9782e472501.setContent(html_8675ba8d2df4e6f23c035495441ec30d);
+                var html_bb50dde9c9de3a557c293ee4b1e7ef7b = $(`<div id="html_bb50dde9c9de3a557c293ee4b1e7ef7b" style="width: 100.0%; height: 100.0%;">     <b>Brussels, Belgium</b><br>     Population: 3284548<br>     Avg Monthly Salary: 3350 €<br>     Avg Cost of Living: 1900 €     </div>`)[0];
+                popup_e5840c1db28bba7634dab57e86cfba25.setContent(html_bb50dde9c9de3a557c293ee4b1e7ef7b);
             
         
 
-        marker_e08aa3e146b20693725769f94198bc7a.bindPopup(popup_e41db7a77f65e17ad255c9782e472501)
+        marker_866cf2f4c3b700fe1eae3b1e4a165b20.bindPopup(popup_e5840c1db28bba7634dab57e86cfba25)
         ;
 
         
     
     
-            marker_e08aa3e146b20693725769f94198bc7a.bindTooltip(
+            marker_866cf2f4c3b700fe1eae3b1e4a165b20.bindTooltip(
+                `<div>
+                     Brussels
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_796999951b2a05278d24e84cfd212202 = L.marker(
+                [51.05361, 3.72528],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_650c43f3ea9f0fc7bf84eca452ba7821 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b75cd84aa7eb4d8710bd25bfdb1aad17 = $(`<div id="html_b75cd84aa7eb4d8710bd25bfdb1aad17" style="width: 100.0%; height: 100.0%;">     <b>Gent, Belgium</b><br>     Population: 645813<br>     Avg Monthly Salary: 2400 €<br>     Avg Cost of Living: 1200 €     </div>`)[0];
+                popup_650c43f3ea9f0fc7bf84eca452ba7821.setContent(html_b75cd84aa7eb4d8710bd25bfdb1aad17);
+            
+        
+
+        marker_796999951b2a05278d24e84cfd212202.bindPopup(popup_650c43f3ea9f0fc7bf84eca452ba7821)
+        ;
+
+        
+    
+    
+            marker_796999951b2a05278d24e84cfd212202.bindTooltip(
+                `<div>
+                     Gent
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2529b7d648391397a3021c2864a7339b = L.marker(
+                [43.567, 27.833],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_a8d94a2911f009214762aa66f629ca1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5ad876b6a604393e808450f3a881ea2 = $(`<div id="html_a5ad876b6a604393e808450f3a881ea2" style="width: 100.0%; height: 100.0%;">     <b>Dobrich, Bulgaria</b><br>     Population: 73895<br>     Avg Monthly Salary: 1200 €<br>     Avg Cost of Living: 1100 €     </div>`)[0];
+                popup_a8d94a2911f009214762aa66f629ca1b.setContent(html_a5ad876b6a604393e808450f3a881ea2);
+            
+        
+
+        marker_2529b7d648391397a3021c2864a7339b.bindPopup(popup_a8d94a2911f009214762aa66f629ca1b)
+        ;
+
+        
+    
+    
+            marker_2529b7d648391397a3021c2864a7339b.bindTooltip(
                 `<div>
                      Dobrich
                  </div>`,
@@ -329,31 +363,31 @@
             );
         
     
-            var marker_1f524592f6228ac61934f660e071d300 = L.marker(
+            var marker_8e926b45d74139970df08462feafafa9 = L.marker(
                 [42.7, 23.33],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_a26886c21155e6dbbf431cd39d642666 = L.popup({
+        var popup_23e05e8bfb1d0bedc276d819ea0d0088 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_ddd59b705f8856c1a5fc4ff03bdf805d = $(`<div id="html_ddd59b705f8856c1a5fc4ff03bdf805d" style="width: 100.0%; height: 100.0%;">     <b>Sofia, Bulgaria</b><br>     Population: 1553106<br>     Avg Monthly Salary: 1300 €<br>     Avg Cost of Living: 1100 €     </div>`)[0];
-                popup_a26886c21155e6dbbf431cd39d642666.setContent(html_ddd59b705f8856c1a5fc4ff03bdf805d);
+                var html_8d14745eb2aa3b55d27490f7cbaa6629 = $(`<div id="html_8d14745eb2aa3b55d27490f7cbaa6629" style="width: 100.0%; height: 100.0%;">     <b>Sofia, Bulgaria</b><br>     Population: 1553106<br>     Avg Monthly Salary: 1300 €<br>     Avg Cost of Living: 1100 €     </div>`)[0];
+                popup_23e05e8bfb1d0bedc276d819ea0d0088.setContent(html_8d14745eb2aa3b55d27490f7cbaa6629);
             
         
 
-        marker_1f524592f6228ac61934f660e071d300.bindPopup(popup_a26886c21155e6dbbf431cd39d642666)
+        marker_8e926b45d74139970df08462feafafa9.bindPopup(popup_23e05e8bfb1d0bedc276d819ea0d0088)
         ;
 
         
     
     
-            marker_1f524592f6228ac61934f660e071d300.bindTooltip(
+            marker_8e926b45d74139970df08462feafafa9.bindTooltip(
                 `<div>
                      Sofia
                  </div>`,
@@ -363,31 +397,31 @@
             );
         
     
-            var marker_5b55a6c342707d9ed7c899e476ba66f9 = L.marker(
+            var marker_043e0b9e19a177b6cdef8c7d74c31e6b = L.marker(
                 [43.51, 16.44],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_91e94543270c2644c7efd67ebaad8da7 = L.popup({
+        var popup_31082092d957df9ee866329cc4c3a244 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_f6e12b38486811191bd1d9d31eeb737b = $(`<div id="html_f6e12b38486811191bd1d9d31eeb737b" style="width: 100.0%; height: 100.0%;">     <b>Split, Croatia</b><br>     Population: 354264<br>     Avg Monthly Salary: 1500 €<br>     Avg Cost of Living: 1250 €     </div>`)[0];
-                popup_91e94543270c2644c7efd67ebaad8da7.setContent(html_f6e12b38486811191bd1d9d31eeb737b);
+                var html_4033ef1f57a45e9c47565a769b27d24e = $(`<div id="html_4033ef1f57a45e9c47565a769b27d24e" style="width: 100.0%; height: 100.0%;">     <b>Split, Croatia</b><br>     Population: 354264<br>     Avg Monthly Salary: 1500 €<br>     Avg Cost of Living: 1250 €     </div>`)[0];
+                popup_31082092d957df9ee866329cc4c3a244.setContent(html_4033ef1f57a45e9c47565a769b27d24e);
             
         
 
-        marker_5b55a6c342707d9ed7c899e476ba66f9.bindPopup(popup_91e94543270c2644c7efd67ebaad8da7)
+        marker_043e0b9e19a177b6cdef8c7d74c31e6b.bindPopup(popup_31082092d957df9ee866329cc4c3a244)
         ;
 
         
     
     
-            marker_5b55a6c342707d9ed7c899e476ba66f9.bindTooltip(
+            marker_043e0b9e19a177b6cdef8c7d74c31e6b.bindTooltip(
                 `<div>
                      Split
                  </div>`,
@@ -397,31 +431,31 @@
             );
         
     
-            var marker_6b13524b86747c107df4d33268b1fbe1 = L.marker(
+            var marker_8ff8ede7cee37d7ee674b0e6dc8f379a = L.marker(
                 [45.81306, 15.9775],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_a81cc58d364c10fc79333ea7f76737e8 = L.popup({
+        var popup_24b1fa6c893793aecc8224509f9f9763 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_62280352ea27b014b7183c44480271b2 = $(`<div id="html_62280352ea27b014b7183c44480271b2" style="width: 100.0%; height: 100.0%;">     <b>Zagreb, Croatia</b><br>     Population: 1217131<br>     Avg Monthly Salary: 1570 €<br>     Avg Cost of Living: 1330 €     </div>`)[0];
-                popup_a81cc58d364c10fc79333ea7f76737e8.setContent(html_62280352ea27b014b7183c44480271b2);
+                var html_9f31b87755ca22825e2b96a5bdd7f662 = $(`<div id="html_9f31b87755ca22825e2b96a5bdd7f662" style="width: 100.0%; height: 100.0%;">     <b>Zagreb, Croatia</b><br>     Population: 1217131<br>     Avg Monthly Salary: 1570 €<br>     Avg Cost of Living: 1330 €     </div>`)[0];
+                popup_24b1fa6c893793aecc8224509f9f9763.setContent(html_9f31b87755ca22825e2b96a5bdd7f662);
             
         
 
-        marker_6b13524b86747c107df4d33268b1fbe1.bindPopup(popup_a81cc58d364c10fc79333ea7f76737e8)
+        marker_8ff8ede7cee37d7ee674b0e6dc8f379a.bindPopup(popup_24b1fa6c893793aecc8224509f9f9763)
         ;
 
         
     
     
-            marker_6b13524b86747c107df4d33268b1fbe1.bindTooltip(
+            marker_8ff8ede7cee37d7ee674b0e6dc8f379a.bindTooltip(
                 `<div>
                      Zagreb
                  </div>`,
@@ -431,31 +465,31 @@
             );
         
     
-            var marker_2cefc106ad8c41687fce095652090cf9 = L.marker(
+            var marker_f610490791823b4910ac0d1488ea54b4 = L.marker(
                 [35.1725, 33.365],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_292e0b9e2a945710d5df35b59a873001 = L.popup({
+        var popup_7e783f27f24c9596e6d93f3b01956b04 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_ca8ea753b1672246304af05aaaeda7c4 = $(`<div id="html_ca8ea753b1672246304af05aaaeda7c4" style="width: 100.0%; height: 100.0%;">     <b>Lefkosia, Cyprus</b><br>     Population: 356400<br>     Avg Monthly Salary: 1486 €<br>     Avg Cost of Living: 1350 €     </div>`)[0];
-                popup_292e0b9e2a945710d5df35b59a873001.setContent(html_ca8ea753b1672246304af05aaaeda7c4);
+                var html_ac979474f160d3e271d3fbbc8a6017c8 = $(`<div id="html_ac979474f160d3e271d3fbbc8a6017c8" style="width: 100.0%; height: 100.0%;">     <b>Lefkosia, Cyprus</b><br>     Population: 356400<br>     Avg Monthly Salary: 1486 €<br>     Avg Cost of Living: 1350 €     </div>`)[0];
+                popup_7e783f27f24c9596e6d93f3b01956b04.setContent(html_ac979474f160d3e271d3fbbc8a6017c8);
             
         
 
-        marker_2cefc106ad8c41687fce095652090cf9.bindPopup(popup_292e0b9e2a945710d5df35b59a873001)
+        marker_f610490791823b4910ac0d1488ea54b4.bindPopup(popup_7e783f27f24c9596e6d93f3b01956b04)
         ;
 
         
     
     
-            marker_2cefc106ad8c41687fce095652090cf9.bindTooltip(
+            marker_f610490791823b4910ac0d1488ea54b4.bindTooltip(
                 `<div>
                      Lefkosia
                  </div>`,
@@ -465,31 +499,31 @@
             );
         
     
-            var marker_f24a2d7dea1396b94e5b89eafdaf9ae0 = L.marker(
+            var marker_188842ab5fbb8e8eb26640fa8aab187f = L.marker(
                 [34.67472, 33.04417],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_d88ff3f25d44c14b5028341f58cca10d = L.popup({
+        var popup_55908912938f66696b040a05e192e987 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_8ddf4970ae0de3f4bfe7535d64133709 = $(`<div id="html_8ddf4970ae0de3f4bfe7535d64133709" style="width: 100.0%; height: 100.0%;">     <b>Lemesos, Cyprus</b><br>     Population: 262238<br>     Avg Monthly Salary: 2500 €<br>     Avg Cost of Living: 2300 €     </div>`)[0];
-                popup_d88ff3f25d44c14b5028341f58cca10d.setContent(html_8ddf4970ae0de3f4bfe7535d64133709);
+                var html_9ee04e98f4703995e637b50559468d90 = $(`<div id="html_9ee04e98f4703995e637b50559468d90" style="width: 100.0%; height: 100.0%;">     <b>Lemesos, Cyprus</b><br>     Population: 262238<br>     Avg Monthly Salary: 2500 €<br>     Avg Cost of Living: 2300 €     </div>`)[0];
+                popup_55908912938f66696b040a05e192e987.setContent(html_9ee04e98f4703995e637b50559468d90);
             
         
 
-        marker_f24a2d7dea1396b94e5b89eafdaf9ae0.bindPopup(popup_d88ff3f25d44c14b5028341f58cca10d)
+        marker_188842ab5fbb8e8eb26640fa8aab187f.bindPopup(popup_55908912938f66696b040a05e192e987)
         ;
 
         
     
     
-            marker_f24a2d7dea1396b94e5b89eafdaf9ae0.bindTooltip(
+            marker_188842ab5fbb8e8eb26640fa8aab187f.bindTooltip(
                 `<div>
                      Lemesos
                  </div>`,
@@ -499,31 +533,65 @@
             );
         
     
-            var marker_b5a58efd54019b48ffba9eeb60a162f5 = L.marker(
-                [50.0875, 14.42139],
+            var marker_6e2b9c397605bebe0dbd5a382b6af193 = L.marker(
+                [49.83556, 18.2925],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_cf7e445635ddefe23cb784c61cf5d340 = L.popup({
+        var popup_76741ce9557520a6c68528c4bc3b03c7 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_838e24f85153009d54518db5d9d1da2b = $(`<div id="html_838e24f85153009d54518db5d9d1da2b" style="width: 100.0%; height: 100.0%;">     <b>Prague, Czechia</b><br>     Population: 2231212<br>     Avg Monthly Salary: 1860 €<br>     Avg Cost of Living: 1590 €     </div>`)[0];
-                popup_cf7e445635ddefe23cb784c61cf5d340.setContent(html_838e24f85153009d54518db5d9d1da2b);
+                var html_b5f44fcb6652e86bd1fea2307f2e7fa9 = $(`<div id="html_b5f44fcb6652e86bd1fea2307f2e7fa9" style="width: 100.0%; height: 100.0%;">     <b>Ostrava, Czechia</b><br>     Population: 711860<br>     Avg Monthly Salary: 1520 €<br>     Avg Cost of Living: 1100 €     </div>`)[0];
+                popup_76741ce9557520a6c68528c4bc3b03c7.setContent(html_b5f44fcb6652e86bd1fea2307f2e7fa9);
             
         
 
-        marker_b5a58efd54019b48ffba9eeb60a162f5.bindPopup(popup_cf7e445635ddefe23cb784c61cf5d340)
+        marker_6e2b9c397605bebe0dbd5a382b6af193.bindPopup(popup_76741ce9557520a6c68528c4bc3b03c7)
         ;
 
         
     
     
-            marker_b5a58efd54019b48ffba9eeb60a162f5.bindTooltip(
+            marker_6e2b9c397605bebe0dbd5a382b6af193.bindTooltip(
+                `<div>
+                     Ostrava
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8c53a2aba80e4a1140df39cdff7983a1 = L.marker(
+                [50.0875, 14.42139],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_2a6e3bf8c2d640e99bcc9082d283c132 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a666b6224895bf4d175512006aebe80 = $(`<div id="html_4a666b6224895bf4d175512006aebe80" style="width: 100.0%; height: 100.0%;">     <b>Prague, Czechia</b><br>     Population: 2231212<br>     Avg Monthly Salary: 1860 €<br>     Avg Cost of Living: 1590 €     </div>`)[0];
+                popup_2a6e3bf8c2d640e99bcc9082d283c132.setContent(html_4a666b6224895bf4d175512006aebe80);
+            
+        
+
+        marker_8c53a2aba80e4a1140df39cdff7983a1.bindPopup(popup_2a6e3bf8c2d640e99bcc9082d283c132)
+        ;
+
+        
+    
+    
+            marker_8c53a2aba80e4a1140df39cdff7983a1.bindTooltip(
                 `<div>
                      Prague
                  </div>`,
@@ -533,31 +601,31 @@
             );
         
     
-            var marker_03be77a1eb202f7d7423d8e853c812e0 = L.marker(
+            var marker_21880ebaf05bb690cc334f1387b18b59 = L.marker(
                 [55.67611, 12.56833],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_59dbd571a9685f06d91e25f0b29d6b75 = L.popup({
+        var popup_7085ada3a386e0992845e70cf81ba8f6 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_f893e3da94a681cb6d054dcecd9db068 = $(`<div id="html_f893e3da94a681cb6d054dcecd9db068" style="width: 100.0%; height: 100.0%;">     <b>Copenhagen, Denmark</b><br>     Population: 1933919<br>     Avg Monthly Salary: 4200 €<br>     Avg Cost of Living: 2750 €     </div>`)[0];
-                popup_59dbd571a9685f06d91e25f0b29d6b75.setContent(html_f893e3da94a681cb6d054dcecd9db068);
+                var html_146a23aebf56a1e8fc0224ee2525b8b6 = $(`<div id="html_146a23aebf56a1e8fc0224ee2525b8b6" style="width: 100.0%; height: 100.0%;">     <b>Copenhagen, Denmark</b><br>     Population: 1933919<br>     Avg Monthly Salary: 4200 €<br>     Avg Cost of Living: 2750 €     </div>`)[0];
+                popup_7085ada3a386e0992845e70cf81ba8f6.setContent(html_146a23aebf56a1e8fc0224ee2525b8b6);
             
         
 
-        marker_03be77a1eb202f7d7423d8e853c812e0.bindPopup(popup_59dbd571a9685f06d91e25f0b29d6b75)
+        marker_21880ebaf05bb690cc334f1387b18b59.bindPopup(popup_7085ada3a386e0992845e70cf81ba8f6)
         ;
 
         
     
     
-            marker_03be77a1eb202f7d7423d8e853c812e0.bindTooltip(
+            marker_21880ebaf05bb690cc334f1387b18b59.bindTooltip(
                 `<div>
                      Copenhagen
                  </div>`,
@@ -567,31 +635,31 @@
             );
         
     
-            var marker_dadf4bced37855c25693e3e9598cec3c = L.marker(
+            var marker_95ab9d6b5959438bb62b47a8b5c93cc8 = L.marker(
                 [55.39583, 10.38861],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_3a194ec5dd02b538922b9c332e189587 = L.popup({
+        var popup_0359d99b40ac5bce2fd99c724fcf5acc = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_106458ce2d6f567407d6f8b69bc0dd0a = $(`<div id="html_106458ce2d6f567407d6f8b69bc0dd0a" style="width: 100.0%; height: 100.0%;">     <b>Odense, Denmark</b><br>     Population: 382711<br>     Avg Monthly Salary: 3400 €<br>     Avg Cost of Living: 2100 €     </div>`)[0];
-                popup_3a194ec5dd02b538922b9c332e189587.setContent(html_106458ce2d6f567407d6f8b69bc0dd0a);
+                var html_d2eec14522a4df720774ad8700d4792a = $(`<div id="html_d2eec14522a4df720774ad8700d4792a" style="width: 100.0%; height: 100.0%;">     <b>Odense, Denmark</b><br>     Population: 382711<br>     Avg Monthly Salary: 3400 €<br>     Avg Cost of Living: 2100 €     </div>`)[0];
+                popup_0359d99b40ac5bce2fd99c724fcf5acc.setContent(html_d2eec14522a4df720774ad8700d4792a);
             
         
 
-        marker_dadf4bced37855c25693e3e9598cec3c.bindPopup(popup_3a194ec5dd02b538922b9c332e189587)
+        marker_95ab9d6b5959438bb62b47a8b5c93cc8.bindPopup(popup_0359d99b40ac5bce2fd99c724fcf5acc)
         ;
 
         
     
     
-            marker_dadf4bced37855c25693e3e9598cec3c.bindTooltip(
+            marker_95ab9d6b5959438bb62b47a8b5c93cc8.bindTooltip(
                 `<div>
                      Odense
                  </div>`,
@@ -601,31 +669,31 @@
             );
         
     
-            var marker_a494e81da3d511796c5ab245be97321c = L.marker(
+            var marker_56eaa4c577dca074e556637e35d3468e = L.marker(
                 [59.43722, 24.74528],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_9df244de7847d401e6addef4634cf95e = L.popup({
+        var popup_81dc88bbbfd9b6385e84c8493b9dc002 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_bdc78f4fd395eb26c5d13867a974e718 = $(`<div id="html_bdc78f4fd395eb26c5d13867a974e718" style="width: 100.0%; height: 100.0%;">     <b>Tallinn, Estonia</b><br>     Population: 390860<br>     Avg Monthly Salary: 1700 €<br>     Avg Cost of Living: 1600 €     </div>`)[0];
-                popup_9df244de7847d401e6addef4634cf95e.setContent(html_bdc78f4fd395eb26c5d13867a974e718);
+                var html_e2c72641ba2d8d3d8b6b08066d51e58c = $(`<div id="html_e2c72641ba2d8d3d8b6b08066d51e58c" style="width: 100.0%; height: 100.0%;">     <b>Tallinn, Estonia</b><br>     Population: 390860<br>     Avg Monthly Salary: 1700 €<br>     Avg Cost of Living: 1600 €     </div>`)[0];
+                popup_81dc88bbbfd9b6385e84c8493b9dc002.setContent(html_e2c72641ba2d8d3d8b6b08066d51e58c);
             
         
 
-        marker_a494e81da3d511796c5ab245be97321c.bindPopup(popup_9df244de7847d401e6addef4634cf95e)
+        marker_56eaa4c577dca074e556637e35d3468e.bindPopup(popup_81dc88bbbfd9b6385e84c8493b9dc002)
         ;
 
         
     
     
-            marker_a494e81da3d511796c5ab245be97321c.bindTooltip(
+            marker_56eaa4c577dca074e556637e35d3468e.bindTooltip(
                 `<div>
                      Tallinn
                  </div>`,
@@ -635,31 +703,31 @@
             );
         
     
-            var marker_c11f5688c14b7ff911f53354425da1fd = L.marker(
+            var marker_f4a3561089b8f027cabe674d940a45f4 = L.marker(
                 [60.17083, 24.9375],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_6c9dfbad8e8d903fb5e9e517e250f98b = L.popup({
+        var popup_3f6b31ba7cd8b869190ea07f1f6ab1a1 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_49ceeb4a2a37cf1f68d762531fdea871 = $(`<div id="html_49ceeb4a2a37cf1f68d762531fdea871" style="width: 100.0%; height: 100.0%;">     <b>Helsinki, Finland</b><br>     Population: 1507140<br>     Avg Monthly Salary: 3900 €<br>     Avg Cost of Living: 2050 €     </div>`)[0];
-                popup_6c9dfbad8e8d903fb5e9e517e250f98b.setContent(html_49ceeb4a2a37cf1f68d762531fdea871);
+                var html_78cfa58fd6aca31b199e34ebdc92c868 = $(`<div id="html_78cfa58fd6aca31b199e34ebdc92c868" style="width: 100.0%; height: 100.0%;">     <b>Helsinki, Finland</b><br>     Population: 1507140<br>     Avg Monthly Salary: 3900 €<br>     Avg Cost of Living: 2050 €     </div>`)[0];
+                popup_3f6b31ba7cd8b869190ea07f1f6ab1a1.setContent(html_78cfa58fd6aca31b199e34ebdc92c868);
             
         
 
-        marker_c11f5688c14b7ff911f53354425da1fd.bindPopup(popup_6c9dfbad8e8d903fb5e9e517e250f98b)
+        marker_f4a3561089b8f027cabe674d940a45f4.bindPopup(popup_3f6b31ba7cd8b869190ea07f1f6ab1a1)
         ;
 
         
     
     
-            marker_c11f5688c14b7ff911f53354425da1fd.bindTooltip(
+            marker_f4a3561089b8f027cabe674d940a45f4.bindTooltip(
                 `<div>
                      Helsinki
                  </div>`,
@@ -669,31 +737,31 @@
             );
         
     
-            var marker_ea5d6e4aa3e01d8f8bfd0de10eac7125 = L.marker(
+            var marker_38e4226e6281686e9cf8fc6bf1e268e0 = L.marker(
                 [61.49806, 23.76],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_d32e3cd5e08b73f2433f837c6e34741c = L.popup({
+        var popup_8a8b5fc7d50f636a08cbc95243e7baa8 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_917be98570c1ecd4f41a71d6dd00ec10 = $(`<div id="html_917be98570c1ecd4f41a71d6dd00ec10" style="width: 100.0%; height: 100.0%;">     <b>Tampere, Finland</b><br>     Population: 444370<br>     Avg Monthly Salary: 3500 €<br>     Avg Cost of Living: 1600 €     </div>`)[0];
-                popup_d32e3cd5e08b73f2433f837c6e34741c.setContent(html_917be98570c1ecd4f41a71d6dd00ec10);
+                var html_fdbbc02569edf42020ad7bcc803f3b93 = $(`<div id="html_fdbbc02569edf42020ad7bcc803f3b93" style="width: 100.0%; height: 100.0%;">     <b>Tampere, Finland</b><br>     Population: 444370<br>     Avg Monthly Salary: 3500 €<br>     Avg Cost of Living: 1600 €     </div>`)[0];
+                popup_8a8b5fc7d50f636a08cbc95243e7baa8.setContent(html_fdbbc02569edf42020ad7bcc803f3b93);
             
         
 
-        marker_ea5d6e4aa3e01d8f8bfd0de10eac7125.bindPopup(popup_d32e3cd5e08b73f2433f837c6e34741c)
+        marker_38e4226e6281686e9cf8fc6bf1e268e0.bindPopup(popup_8a8b5fc7d50f636a08cbc95243e7baa8)
         ;
 
         
     
     
-            marker_ea5d6e4aa3e01d8f8bfd0de10eac7125.bindTooltip(
+            marker_38e4226e6281686e9cf8fc6bf1e268e0.bindTooltip(
                 `<div>
                      Tampere
                  </div>`,
@@ -703,31 +771,31 @@
             );
         
     
-            var marker_dd944190beb0174185cd6e3dd1f0fe7d = L.marker(
+            var marker_5b7d23d4273e0f8151518ebd769cda44 = L.marker(
                 [45.7675, 4.835],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_102962e1e0e48989db41a1a7c3450177 = L.popup({
+        var popup_bff0157b86cfa3d545abfa376bc98ede = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_2eab7fd8a237291827ee90b965a6f31b = $(`<div id="html_2eab7fd8a237291827ee90b965a6f31b" style="width: 100.0%; height: 100.0%;">     <b>Lyon, France</b><br>     Population: 520774<br>     Avg Monthly Salary: 2300 €<br>     Avg Cost of Living: 1800 €     </div>`)[0];
-                popup_102962e1e0e48989db41a1a7c3450177.setContent(html_2eab7fd8a237291827ee90b965a6f31b);
+                var html_2d8192c3c3df0062e808a3a53d3170c9 = $(`<div id="html_2d8192c3c3df0062e808a3a53d3170c9" style="width: 100.0%; height: 100.0%;">     <b>Lyon, France</b><br>     Population: 520774<br>     Avg Monthly Salary: 2300 €<br>     Avg Cost of Living: 1800 €     </div>`)[0];
+                popup_bff0157b86cfa3d545abfa376bc98ede.setContent(html_2d8192c3c3df0062e808a3a53d3170c9);
             
         
 
-        marker_dd944190beb0174185cd6e3dd1f0fe7d.bindPopup(popup_102962e1e0e48989db41a1a7c3450177)
+        marker_5b7d23d4273e0f8151518ebd769cda44.bindPopup(popup_bff0157b86cfa3d545abfa376bc98ede)
         ;
 
         
     
     
-            marker_dd944190beb0174185cd6e3dd1f0fe7d.bindTooltip(
+            marker_5b7d23d4273e0f8151518ebd769cda44.bindTooltip(
                 `<div>
                      Lyon
                  </div>`,
@@ -737,65 +805,31 @@
             );
         
     
-            var marker_ac7fd7098651713504fe692c8e913b53 = L.marker(
-                [43.6045, 1.444],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_30b3f0c3aa08928b54c60409199536eb = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_896c2f6f57a1a61e09f458174e016703 = $(`<div id="html_896c2f6f57a1a61e09f458174e016703" style="width: 100.0%; height: 100.0%;">     <b>Toulouse, France</b><br>     Population: 511684<br>     Avg Monthly Salary: 2600 €<br>     Avg Cost of Living: 1600 €     </div>`)[0];
-                popup_30b3f0c3aa08928b54c60409199536eb.setContent(html_896c2f6f57a1a61e09f458174e016703);
-            
-        
-
-        marker_ac7fd7098651713504fe692c8e913b53.bindPopup(popup_30b3f0c3aa08928b54c60409199536eb)
-        ;
-
-        
-    
-    
-            marker_ac7fd7098651713504fe692c8e913b53.bindTooltip(
-                `<div>
-                     Toulouse
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_149359fb985e21e732b0f7356aa1b83d = L.marker(
+            var marker_c86de937646b51357964afc0542dd290 = L.marker(
                 [48.85667, 2.35222],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_c02a97ff2d2943549f632405694e2552 = L.popup({
+        var popup_810674a039af2fe184c0b8b05ce891d8 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_c74ddba8c0da994b8acc5558e2529fc9 = $(`<div id="html_c74ddba8c0da994b8acc5558e2529fc9" style="width: 100.0%; height: 100.0%;">     <b>Paris, France</b><br>     Population: 2110000<br>     Avg Monthly Salary: 3300 €<br>     Avg Cost of Living: 2400 €     </div>`)[0];
-                popup_c02a97ff2d2943549f632405694e2552.setContent(html_c74ddba8c0da994b8acc5558e2529fc9);
+                var html_5bccd4f8a83294653d4d4a305ef76083 = $(`<div id="html_5bccd4f8a83294653d4d4a305ef76083" style="width: 100.0%; height: 100.0%;">     <b>Paris, France</b><br>     Population: 2110000<br>     Avg Monthly Salary: 3300 €<br>     Avg Cost of Living: 2400 €     </div>`)[0];
+                popup_810674a039af2fe184c0b8b05ce891d8.setContent(html_5bccd4f8a83294653d4d4a305ef76083);
             
         
 
-        marker_149359fb985e21e732b0f7356aa1b83d.bindPopup(popup_c02a97ff2d2943549f632405694e2552)
+        marker_c86de937646b51357964afc0542dd290.bindPopup(popup_810674a039af2fe184c0b8b05ce891d8)
         ;
 
         
     
     
-            marker_149359fb985e21e732b0f7356aa1b83d.bindTooltip(
+            marker_c86de937646b51357964afc0542dd290.bindTooltip(
                 `<div>
                      Paris
                  </div>`,
@@ -805,33 +839,33 @@
             );
         
     
-            var marker_88571d77aae88a72dad8e6a5fb63400e = L.marker(
-                [51.05, 13.74],
+            var marker_3edbc0f0dd70850986d03667870022d2 = L.marker(
+                [43.6045, 1.444],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_9bace4df2441904f3e8aa1363fbdd896 = L.popup({
+        var popup_854c46336e8127217a333e9242bec1f7 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_f548177b7df38df7e3f8c97752c833ab = $(`<div id="html_f548177b7df38df7e3f8c97752c833ab" style="width: 100.0%; height: 100.0%;">     <b>Dresden, Germany</b><br>     Population: 1343213<br>     Avg Monthly Salary: 3050 €<br>     Avg Cost of Living: 1530 €     </div>`)[0];
-                popup_9bace4df2441904f3e8aa1363fbdd896.setContent(html_f548177b7df38df7e3f8c97752c833ab);
+                var html_130afffdb5f50e3ddbf63f31f1a2df53 = $(`<div id="html_130afffdb5f50e3ddbf63f31f1a2df53" style="width: 100.0%; height: 100.0%;">     <b>Toulouse, France</b><br>     Population: 511684<br>     Avg Monthly Salary: 2600 €<br>     Avg Cost of Living: 1600 €     </div>`)[0];
+                popup_854c46336e8127217a333e9242bec1f7.setContent(html_130afffdb5f50e3ddbf63f31f1a2df53);
             
         
 
-        marker_88571d77aae88a72dad8e6a5fb63400e.bindPopup(popup_9bace4df2441904f3e8aa1363fbdd896)
+        marker_3edbc0f0dd70850986d03667870022d2.bindPopup(popup_854c46336e8127217a333e9242bec1f7)
         ;
 
         
     
     
-            marker_88571d77aae88a72dad8e6a5fb63400e.bindTooltip(
+            marker_3edbc0f0dd70850986d03667870022d2.bindTooltip(
                 `<div>
-                     Dresden
+                     Toulouse
                  </div>`,
                 {
   "sticky": true,
@@ -839,31 +873,31 @@
             );
         
     
-            var marker_f4403291b4c6fec26e0fb1d253cde7e5 = L.marker(
+            var marker_3ca13a8f1ebc1b432360e2e83c34f0bb = L.marker(
                 [52.52, 13.405],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_f4b6b0d9726c409885fe92bf0f65fc02 = L.popup({
+        var popup_05bb6f4ebb60822ff427d1ea4ffad290 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_5f0d8899d4d6d5a27603cc13cd779526 = $(`<div id="html_5f0d8899d4d6d5a27603cc13cd779526" style="width: 100.0%; height: 100.0%;">     <b>Berlin, Germany</b><br>     Population: 5303922<br>     Avg Monthly Salary: 3200 €<br>     Avg Cost of Living: 2200 €     </div>`)[0];
-                popup_f4b6b0d9726c409885fe92bf0f65fc02.setContent(html_5f0d8899d4d6d5a27603cc13cd779526);
+                var html_afb666f1eb2d5dbcbf2443f0c6dab608 = $(`<div id="html_afb666f1eb2d5dbcbf2443f0c6dab608" style="width: 100.0%; height: 100.0%;">     <b>Berlin, Germany</b><br>     Population: 5303922<br>     Avg Monthly Salary: 3200 €<br>     Avg Cost of Living: 2200 €     </div>`)[0];
+                popup_05bb6f4ebb60822ff427d1ea4ffad290.setContent(html_afb666f1eb2d5dbcbf2443f0c6dab608);
             
         
 
-        marker_f4403291b4c6fec26e0fb1d253cde7e5.bindPopup(popup_f4b6b0d9726c409885fe92bf0f65fc02)
+        marker_3ca13a8f1ebc1b432360e2e83c34f0bb.bindPopup(popup_05bb6f4ebb60822ff427d1ea4ffad290)
         ;
 
         
     
     
-            marker_f4403291b4c6fec26e0fb1d253cde7e5.bindTooltip(
+            marker_3ca13a8f1ebc1b432360e2e83c34f0bb.bindTooltip(
                 `<div>
                      Berlin
                  </div>`,
@@ -873,201 +907,31 @@
             );
         
     
-            var marker_fa3afe1fb660a86c28bca093dabb8acc = L.marker(
-                [50.11056, 8.68222],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_6052fe524ebc259c5604825c4e017cf2 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_9a7708cba993edbea567189ace67abe0 = $(`<div id="html_9a7708cba993edbea567189ace67abe0" style="width: 100.0%; height: 100.0%;">     <b>Frankfurt am Main, Germany</b><br>     Population: 2710501<br>     Avg Monthly Salary: 3800 €<br>     Avg Cost of Living: 2350 €     </div>`)[0];
-                popup_6052fe524ebc259c5604825c4e017cf2.setContent(html_9a7708cba993edbea567189ace67abe0);
-            
-        
-
-        marker_fa3afe1fb660a86c28bca093dabb8acc.bindPopup(popup_6052fe524ebc259c5604825c4e017cf2)
-        ;
-
-        
-    
-    
-            marker_fa3afe1fb660a86c28bca093dabb8acc.bindTooltip(
-                `<div>
-                     Frankfurt am Main
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_697a8d31431235606059ed69adb3d221 = L.marker(
-                [51.34, 12.375],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_2b8d967d5dbab87fb44af1764b3a870c = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_3bc569169cedc0a6657ea0fb026914df = $(`<div id="html_3bc569169cedc0a6657ea0fb026914df" style="width: 100.0%; height: 100.0%;">     <b>Leipzig, Germany</b><br>     Population: 1043613<br>     Avg Monthly Salary: 2800 €<br>     Avg Cost of Living: 1600 €     </div>`)[0];
-                popup_2b8d967d5dbab87fb44af1764b3a870c.setContent(html_3bc569169cedc0a6657ea0fb026914df);
-            
-        
-
-        marker_697a8d31431235606059ed69adb3d221.bindPopup(popup_2b8d967d5dbab87fb44af1764b3a870c)
-        ;
-
-        
-    
-    
-            marker_697a8d31431235606059ed69adb3d221.bindTooltip(
-                `<div>
-                     Leipzig
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_381836b92ef00d8a77cf76428fc34ea2 = L.marker(
-                [52.367, 9.717],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_c11ddeffb5a2fa223f7afb7a126f62d3 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_54d835ee1d0216947a35bb9f06d98be2 = $(`<div id="html_54d835ee1d0216947a35bb9f06d98be2" style="width: 100.0%; height: 100.0%;">     <b>Hanover, Germany</b><br>     Population: 1316467<br>     Avg Monthly Salary: 2800 €<br>     Avg Cost of Living: 1800 €     </div>`)[0];
-                popup_c11ddeffb5a2fa223f7afb7a126f62d3.setContent(html_54d835ee1d0216947a35bb9f06d98be2);
-            
-        
-
-        marker_381836b92ef00d8a77cf76428fc34ea2.bindPopup(popup_c11ddeffb5a2fa223f7afb7a126f62d3)
-        ;
-
-        
-    
-    
-            marker_381836b92ef00d8a77cf76428fc34ea2.bindTooltip(
-                `<div>
-                     Hanover
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_1ad5608e3cea477e8a6c7cb82b51811a = L.marker(
-                [51.22556, 6.77667],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_9daf2278d8a1ac7081208377b055d385 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_40300086db6e7f71d3e80a1ccd630280 = $(`<div id="html_40300086db6e7f71d3e80a1ccd630280" style="width: 100.0%; height: 100.0%;">     <b>Dusseldorf, Germany</b><br>     Population: 1554077<br>     Avg Monthly Salary: 3200 €<br>     Avg Cost of Living: 2050 €     </div>`)[0];
-                popup_9daf2278d8a1ac7081208377b055d385.setContent(html_40300086db6e7f71d3e80a1ccd630280);
-            
-        
-
-        marker_1ad5608e3cea477e8a6c7cb82b51811a.bindPopup(popup_9daf2278d8a1ac7081208377b055d385)
-        ;
-
-        
-    
-    
-            marker_1ad5608e3cea477e8a6c7cb82b51811a.bindTooltip(
-                `<div>
-                     Dusseldorf
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_c6de5abc5d5507b071401b193649a9f7 = L.marker(
-                [48.1375, 11.575],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_0be04a7c597106a8c52e3f83a69e81ff = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_a8ddb43a4e99b0d8f75d0eaf79c7e1ef = $(`<div id="html_a8ddb43a4e99b0d8f75d0eaf79c7e1ef" style="width: 100.0%; height: 100.0%;">     <b>Munich, Germany</b><br>     Population: 2907752<br>     Avg Monthly Salary: 3540 €<br>     Avg Cost of Living: 2550 €     </div>`)[0];
-                popup_0be04a7c597106a8c52e3f83a69e81ff.setContent(html_a8ddb43a4e99b0d8f75d0eaf79c7e1ef);
-            
-        
-
-        marker_c6de5abc5d5507b071401b193649a9f7.bindPopup(popup_0be04a7c597106a8c52e3f83a69e81ff)
-        ;
-
-        
-    
-    
-            marker_c6de5abc5d5507b071401b193649a9f7.bindTooltip(
-                `<div>
-                     Munich
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_9eb562e393ecdc8eeb84c6bfa2cc27b9 = L.marker(
+            var marker_d3e85e44e5d89af38c7e2d4bfcf56930 = L.marker(
                 [50.93639, 6.95278],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_ceee380ecc5747a7636f788b80c263d6 = L.popup({
+        var popup_9f62ae777e60e848863d68f4cc06ee32 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_5030f8a9e7c8467739bb6cf61e62e839 = $(`<div id="html_5030f8a9e7c8467739bb6cf61e62e839" style="width: 100.0%; height: 100.0%;">     <b>Cologne, Germany</b><br>     Population: 2002550<br>     Avg Monthly Salary: 3200 €<br>     Avg Cost of Living: 2000 €     </div>`)[0];
-                popup_ceee380ecc5747a7636f788b80c263d6.setContent(html_5030f8a9e7c8467739bb6cf61e62e839);
+                var html_b69b9b0230e801ea41c72d9bea8eed57 = $(`<div id="html_b69b9b0230e801ea41c72d9bea8eed57" style="width: 100.0%; height: 100.0%;">     <b>Cologne, Germany</b><br>     Population: 2002550<br>     Avg Monthly Salary: 3200 €<br>     Avg Cost of Living: 2000 €     </div>`)[0];
+                popup_9f62ae777e60e848863d68f4cc06ee32.setContent(html_b69b9b0230e801ea41c72d9bea8eed57);
             
         
 
-        marker_9eb562e393ecdc8eeb84c6bfa2cc27b9.bindPopup(popup_ceee380ecc5747a7636f788b80c263d6)
+        marker_d3e85e44e5d89af38c7e2d4bfcf56930.bindPopup(popup_9f62ae777e60e848863d68f4cc06ee32)
         ;
 
         
     
     
-            marker_9eb562e393ecdc8eeb84c6bfa2cc27b9.bindTooltip(
+            marker_d3e85e44e5d89af38c7e2d4bfcf56930.bindTooltip(
                 `<div>
                      Cologne
                  </div>`,
@@ -1077,33 +941,33 @@
             );
         
     
-            var marker_3e3a881f80881f9dfd02054c0491d2ee = L.marker(
-                [48.7775, 9.18],
+            var marker_a9ac58c87d09992ff0205453145966ca = L.marker(
+                [51.05, 13.74],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_03c6ab79b3d538c5e3320bdb517fdad8 = L.popup({
+        var popup_ae7207959ccbfbeeb5ab1b61e2b2e9d4 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_bb7248d41ec9c7804cb52162895032f7 = $(`<div id="html_bb7248d41ec9c7804cb52162895032f7" style="width: 100.0%; height: 100.0%;">     <b>Stuttgart, Germany</b><br>     Population: 2787449<br>     Avg Monthly Salary: 3300 €<br>     Avg Cost of Living: 2300 €     </div>`)[0];
-                popup_03c6ab79b3d538c5e3320bdb517fdad8.setContent(html_bb7248d41ec9c7804cb52162895032f7);
+                var html_8c3523abe559367cb1039856a467075b = $(`<div id="html_8c3523abe559367cb1039856a467075b" style="width: 100.0%; height: 100.0%;">     <b>Dresden, Germany</b><br>     Population: 1343213<br>     Avg Monthly Salary: 3050 €<br>     Avg Cost of Living: 1530 €     </div>`)[0];
+                popup_ae7207959ccbfbeeb5ab1b61e2b2e9d4.setContent(html_8c3523abe559367cb1039856a467075b);
             
         
 
-        marker_3e3a881f80881f9dfd02054c0491d2ee.bindPopup(popup_03c6ab79b3d538c5e3320bdb517fdad8)
+        marker_a9ac58c87d09992ff0205453145966ca.bindPopup(popup_ae7207959ccbfbeeb5ab1b61e2b2e9d4)
         ;
 
         
     
     
-            marker_3e3a881f80881f9dfd02054c0491d2ee.bindTooltip(
+            marker_a9ac58c87d09992ff0205453145966ca.bindTooltip(
                 `<div>
-                     Stuttgart
+                     Dresden
                  </div>`,
                 {
   "sticky": true,
@@ -1111,31 +975,99 @@
             );
         
     
-            var marker_9f0b7f01875d3060b05aaaaf4ad2028d = L.marker(
-                [53.55, 10.0],
+            var marker_55293ee85f59509efe20869669e84167 = L.marker(
+                [51.22556, 6.77667],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_80e6c6103be5490c174da11fb79d9e86 = L.popup({
+        var popup_ec57add91453e32d46aff338ad68fef9 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_271e1906e5ce315c931ad776d8d435b4 = $(`<div id="html_271e1906e5ce315c931ad776d8d435b4" style="width: 100.0%; height: 100.0%;">     <b>Hamburg, Germany</b><br>     Population: 3315036<br>     Avg Monthly Salary: 3500 €<br>     Avg Cost of Living: 2100 €     </div>`)[0];
-                popup_80e6c6103be5490c174da11fb79d9e86.setContent(html_271e1906e5ce315c931ad776d8d435b4);
+                var html_13a25f9f160d433402cb8d06a698b26b = $(`<div id="html_13a25f9f160d433402cb8d06a698b26b" style="width: 100.0%; height: 100.0%;">     <b>Dusseldorf, Germany</b><br>     Population: 1554077<br>     Avg Monthly Salary: 3200 €<br>     Avg Cost of Living: 2050 €     </div>`)[0];
+                popup_ec57add91453e32d46aff338ad68fef9.setContent(html_13a25f9f160d433402cb8d06a698b26b);
             
         
 
-        marker_9f0b7f01875d3060b05aaaaf4ad2028d.bindPopup(popup_80e6c6103be5490c174da11fb79d9e86)
+        marker_55293ee85f59509efe20869669e84167.bindPopup(popup_ec57add91453e32d46aff338ad68fef9)
         ;
 
         
     
     
-            marker_9f0b7f01875d3060b05aaaaf4ad2028d.bindTooltip(
+            marker_55293ee85f59509efe20869669e84167.bindTooltip(
+                `<div>
+                     Dusseldorf
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_943c4d97b0f51b838bbf13a52d5e1437 = L.marker(
+                [50.11056, 8.68222],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_ebbbcd06cb1f2e6240aeeb232a2024d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99a90ce8fbb876c5b67f027c1e3386cd = $(`<div id="html_99a90ce8fbb876c5b67f027c1e3386cd" style="width: 100.0%; height: 100.0%;">     <b>Frankfurt am Main, Germany</b><br>     Population: 2710501<br>     Avg Monthly Salary: 3800 €<br>     Avg Cost of Living: 2350 €     </div>`)[0];
+                popup_ebbbcd06cb1f2e6240aeeb232a2024d1.setContent(html_99a90ce8fbb876c5b67f027c1e3386cd);
+            
+        
+
+        marker_943c4d97b0f51b838bbf13a52d5e1437.bindPopup(popup_ebbbcd06cb1f2e6240aeeb232a2024d1)
+        ;
+
+        
+    
+    
+            marker_943c4d97b0f51b838bbf13a52d5e1437.bindTooltip(
+                `<div>
+                     Frankfurt am Main
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_08b3f6c22f65b815747bb4ad035ad084 = L.marker(
+                [53.55, 10.0],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_8cc1fce80dcc1f1f5719707e5485e6de = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e3134f6f2d63116b60f458700574184d = $(`<div id="html_e3134f6f2d63116b60f458700574184d" style="width: 100.0%; height: 100.0%;">     <b>Hamburg, Germany</b><br>     Population: 3315036<br>     Avg Monthly Salary: 3500 €<br>     Avg Cost of Living: 2100 €     </div>`)[0];
+                popup_8cc1fce80dcc1f1f5719707e5485e6de.setContent(html_e3134f6f2d63116b60f458700574184d);
+            
+        
+
+        marker_08b3f6c22f65b815747bb4ad035ad084.bindPopup(popup_8cc1fce80dcc1f1f5719707e5485e6de)
+        ;
+
+        
+    
+    
+            marker_08b3f6c22f65b815747bb4ad035ad084.bindTooltip(
                 `<div>
                      Hamburg
                  </div>`,
@@ -1145,33 +1077,33 @@
             );
         
     
-            var marker_37c2091ab639dced541b22e6d83558c8 = L.marker(
-                [40.64028, 22.93556],
+            var marker_31c1d79c8436a532c9bc3cfc6504b33a = L.marker(
+                [52.367, 9.717],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_6e436186c3a70216528c3ee2eaeba5da = L.popup({
+        var popup_1596130052bacc36af2b4f7e9dabcbce = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_682d3de89b49c41b3c8a576e885884d2 = $(`<div id="html_682d3de89b49c41b3c8a576e885884d2" style="width: 100.0%; height: 100.0%;">     <b>Thessaloniki, Greece</b><br>     Population: 1050568<br>     Avg Monthly Salary: 1000 €<br>     Avg Cost of Living: 1100 €     </div>`)[0];
-                popup_6e436186c3a70216528c3ee2eaeba5da.setContent(html_682d3de89b49c41b3c8a576e885884d2);
+                var html_132306f4a61f0748300398d1def7443b = $(`<div id="html_132306f4a61f0748300398d1def7443b" style="width: 100.0%; height: 100.0%;">     <b>Hanover, Germany</b><br>     Population: 1316467<br>     Avg Monthly Salary: 2800 €<br>     Avg Cost of Living: 1800 €     </div>`)[0];
+                popup_1596130052bacc36af2b4f7e9dabcbce.setContent(html_132306f4a61f0748300398d1def7443b);
             
         
 
-        marker_37c2091ab639dced541b22e6d83558c8.bindPopup(popup_6e436186c3a70216528c3ee2eaeba5da)
+        marker_31c1d79c8436a532c9bc3cfc6504b33a.bindPopup(popup_1596130052bacc36af2b4f7e9dabcbce)
         ;
 
         
     
     
-            marker_37c2091ab639dced541b22e6d83558c8.bindTooltip(
+            marker_31c1d79c8436a532c9bc3cfc6504b33a.bindTooltip(
                 `<div>
-                     Thessaloniki
+                     Hanover
                  </div>`,
                 {
   "sticky": true,
@@ -1179,31 +1111,133 @@
             );
         
     
-            var marker_c5e78f6ae2a4331abd84e6d0e3257901 = L.marker(
-                [37.98417, 23.72806],
+            var marker_9c8bc46ab2d340ea6c24611a96ca6056 = L.marker(
+                [51.34, 12.375],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_fce18456df893d73b90112dab7672f1c = L.popup({
+        var popup_2155bb8d4834cd4931a12f5018e2f066 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_62e92bb68b21923f7508da266e1fc3d4 = $(`<div id="html_62e92bb68b21923f7508da266e1fc3d4" style="width: 100.0%; height: 100.0%;">     <b>Athens, Greece</b><br>     Population: 3530371<br>     Avg Monthly Salary: 1050 €<br>     Avg Cost of Living: 1200 €     </div>`)[0];
-                popup_fce18456df893d73b90112dab7672f1c.setContent(html_62e92bb68b21923f7508da266e1fc3d4);
+                var html_ac7f731242018e97fdc6384ecce81fc1 = $(`<div id="html_ac7f731242018e97fdc6384ecce81fc1" style="width: 100.0%; height: 100.0%;">     <b>Leipzig, Germany</b><br>     Population: 1043613<br>     Avg Monthly Salary: 2800 €<br>     Avg Cost of Living: 1600 €     </div>`)[0];
+                popup_2155bb8d4834cd4931a12f5018e2f066.setContent(html_ac7f731242018e97fdc6384ecce81fc1);
             
         
 
-        marker_c5e78f6ae2a4331abd84e6d0e3257901.bindPopup(popup_fce18456df893d73b90112dab7672f1c)
+        marker_9c8bc46ab2d340ea6c24611a96ca6056.bindPopup(popup_2155bb8d4834cd4931a12f5018e2f066)
         ;
 
         
     
     
-            marker_c5e78f6ae2a4331abd84e6d0e3257901.bindTooltip(
+            marker_9c8bc46ab2d340ea6c24611a96ca6056.bindTooltip(
+                `<div>
+                     Leipzig
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_96d98002571c10b70c1def123b4b70b2 = L.marker(
+                [48.1375, 11.575],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_6954b50ae45ffb84a9e3b6691a43450e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46021ca953dabacfbfcab2d3267bc760 = $(`<div id="html_46021ca953dabacfbfcab2d3267bc760" style="width: 100.0%; height: 100.0%;">     <b>Munich, Germany</b><br>     Population: 2907752<br>     Avg Monthly Salary: 3540 €<br>     Avg Cost of Living: 2550 €     </div>`)[0];
+                popup_6954b50ae45ffb84a9e3b6691a43450e.setContent(html_46021ca953dabacfbfcab2d3267bc760);
+            
+        
+
+        marker_96d98002571c10b70c1def123b4b70b2.bindPopup(popup_6954b50ae45ffb84a9e3b6691a43450e)
+        ;
+
+        
+    
+    
+            marker_96d98002571c10b70c1def123b4b70b2.bindTooltip(
+                `<div>
+                     Munich
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_739edd6417a367d4e51777439d7c9d4a = L.marker(
+                [48.7775, 9.18],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_6c92da79b947c4b1f4bdc9d68a1a2c3d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_082af1f6b4ef4796b95ebdea94cd2d79 = $(`<div id="html_082af1f6b4ef4796b95ebdea94cd2d79" style="width: 100.0%; height: 100.0%;">     <b>Stuttgart, Germany</b><br>     Population: 2787449<br>     Avg Monthly Salary: 3300 €<br>     Avg Cost of Living: 2300 €     </div>`)[0];
+                popup_6c92da79b947c4b1f4bdc9d68a1a2c3d.setContent(html_082af1f6b4ef4796b95ebdea94cd2d79);
+            
+        
+
+        marker_739edd6417a367d4e51777439d7c9d4a.bindPopup(popup_6c92da79b947c4b1f4bdc9d68a1a2c3d)
+        ;
+
+        
+    
+    
+            marker_739edd6417a367d4e51777439d7c9d4a.bindTooltip(
+                `<div>
+                     Stuttgart
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3529e8036dcb7a506f8a9ff90ed44ba2 = L.marker(
+                [37.98417, 23.72806],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_9618d776329950bb639ac2a0f8815fb3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_76426e565eecef7d1fb449c5ff1c53fd = $(`<div id="html_76426e565eecef7d1fb449c5ff1c53fd" style="width: 100.0%; height: 100.0%;">     <b>Athens, Greece</b><br>     Population: 3530371<br>     Avg Monthly Salary: 1050 €<br>     Avg Cost of Living: 1200 €     </div>`)[0];
+                popup_9618d776329950bb639ac2a0f8815fb3.setContent(html_76426e565eecef7d1fb449c5ff1c53fd);
+            
+        
+
+        marker_3529e8036dcb7a506f8a9ff90ed44ba2.bindPopup(popup_9618d776329950bb639ac2a0f8815fb3)
+        ;
+
+        
+    
+    
+            marker_3529e8036dcb7a506f8a9ff90ed44ba2.bindTooltip(
                 `<div>
                      Athens
                  </div>`,
@@ -1213,31 +1247,65 @@
             );
         
     
-            var marker_a81ca2828a352a2435d71b1a6fc4454f = L.marker(
-                [47.4925, 19.05139],
+            var marker_b741a4a28f44fc7a949ea23ea69f4550 = L.marker(
+                [40.64028, 22.93556],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_849c2ae7ea0b06ec09cedd6cbd3746e1 = L.popup({
+        var popup_933fb9d3b7ea5aacba782678ee16c8c7 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_02ed044a945446629b11ab7abf2c0bf7 = $(`<div id="html_02ed044a945446629b11ab7abf2c0bf7" style="width: 100.0%; height: 100.0%;">     <b>Budapest, Hungary</b><br>     Population: 2997506<br>     Avg Monthly Salary: 1100 €<br>     Avg Cost of Living: 1080 €     </div>`)[0];
-                popup_849c2ae7ea0b06ec09cedd6cbd3746e1.setContent(html_02ed044a945446629b11ab7abf2c0bf7);
+                var html_e548e0ad3fdfc3ce358c188444a29ae2 = $(`<div id="html_e548e0ad3fdfc3ce358c188444a29ae2" style="width: 100.0%; height: 100.0%;">     <b>Thessaloniki, Greece</b><br>     Population: 1050568<br>     Avg Monthly Salary: 1000 €<br>     Avg Cost of Living: 1100 €     </div>`)[0];
+                popup_933fb9d3b7ea5aacba782678ee16c8c7.setContent(html_e548e0ad3fdfc3ce358c188444a29ae2);
             
         
 
-        marker_a81ca2828a352a2435d71b1a6fc4454f.bindPopup(popup_849c2ae7ea0b06ec09cedd6cbd3746e1)
+        marker_b741a4a28f44fc7a949ea23ea69f4550.bindPopup(popup_933fb9d3b7ea5aacba782678ee16c8c7)
         ;
 
         
     
     
-            marker_a81ca2828a352a2435d71b1a6fc4454f.bindTooltip(
+            marker_b741a4a28f44fc7a949ea23ea69f4550.bindTooltip(
+                `<div>
+                     Thessaloniki
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cc14eaf23bb5f046ff170fbf01ba3150 = L.marker(
+                [47.4925, 19.05139],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_58e28a992ed9d3a3c0714a2ea4838238 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_677c52ec67b09261c9f7fd235bc78eb6 = $(`<div id="html_677c52ec67b09261c9f7fd235bc78eb6" style="width: 100.0%; height: 100.0%;">     <b>Budapest, Hungary</b><br>     Population: 2997506<br>     Avg Monthly Salary: 1100 €<br>     Avg Cost of Living: 1080 €     </div>`)[0];
+                popup_58e28a992ed9d3a3c0714a2ea4838238.setContent(html_677c52ec67b09261c9f7fd235bc78eb6);
+            
+        
+
+        marker_cc14eaf23bb5f046ff170fbf01ba3150.bindPopup(popup_58e28a992ed9d3a3c0714a2ea4838238)
+        ;
+
+        
+    
+    
+            marker_cc14eaf23bb5f046ff170fbf01ba3150.bindTooltip(
                 `<div>
                      Budapest
                  </div>`,
@@ -1247,65 +1315,31 @@
             );
         
     
-            var marker_6944e5175c6516d6e27e1d1d1db1360d = L.marker(
-                [48.10417, 20.79167],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_c492fcbe1e186ddfad620e58ee94f55a = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_60ebe7ba06da2047b5374eed66afa7b7 = $(`<div id="html_60ebe7ba06da2047b5374eed66afa7b7" style="width: 100.0%; height: 100.0%;">     <b>Miskolc, Hungary</b><br>     Population: 283319<br>     Avg Monthly Salary: 1000 €<br>     Avg Cost of Living: 900 €     </div>`)[0];
-                popup_c492fcbe1e186ddfad620e58ee94f55a.setContent(html_60ebe7ba06da2047b5374eed66afa7b7);
-            
-        
-
-        marker_6944e5175c6516d6e27e1d1d1db1360d.bindPopup(popup_c492fcbe1e186ddfad620e58ee94f55a)
-        ;
-
-        
-    
-    
-            marker_6944e5175c6516d6e27e1d1d1db1360d.bindTooltip(
-                `<div>
-                     Miskolc
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_1236b36b003a29931addedff4c04002e = L.marker(
+            var marker_8da58ab28b662136f8b63358fda1f7e8 = L.marker(
                 [47.53167, 21.62444],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_e593564aeb6c281ffea5a8c1b59c96e1 = L.popup({
+        var popup_f9a0b128489d1beca93ea0fa938ef958 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_57dcee5d14f9e6c93858cb9487188475 = $(`<div id="html_57dcee5d14f9e6c93858cb9487188475" style="width: 100.0%; height: 100.0%;">     <b>Debrecen, Hungary</b><br>     Population: 328409<br>     Avg Monthly Salary: 1000 €<br>     Avg Cost of Living: 950 €     </div>`)[0];
-                popup_e593564aeb6c281ffea5a8c1b59c96e1.setContent(html_57dcee5d14f9e6c93858cb9487188475);
+                var html_7de9e564ff4d0052910d1e3d2152080b = $(`<div id="html_7de9e564ff4d0052910d1e3d2152080b" style="width: 100.0%; height: 100.0%;">     <b>Debrecen, Hungary</b><br>     Population: 328409<br>     Avg Monthly Salary: 1000 €<br>     Avg Cost of Living: 950 €     </div>`)[0];
+                popup_f9a0b128489d1beca93ea0fa938ef958.setContent(html_7de9e564ff4d0052910d1e3d2152080b);
             
         
 
-        marker_1236b36b003a29931addedff4c04002e.bindPopup(popup_e593564aeb6c281ffea5a8c1b59c96e1)
+        marker_8da58ab28b662136f8b63358fda1f7e8.bindPopup(popup_f9a0b128489d1beca93ea0fa938ef958)
         ;
 
         
     
     
-            marker_1236b36b003a29931addedff4c04002e.bindTooltip(
+            marker_8da58ab28b662136f8b63358fda1f7e8.bindTooltip(
                 `<div>
                      Debrecen
                  </div>`,
@@ -1315,33 +1349,33 @@
             );
         
     
-            var marker_754a9d2b174d49f54f4ce45e5ab33d26 = L.marker(
-                [53.35, -6.26028],
+            var marker_d0bd90e0305721bd3b70fe91b68e4a94 = L.marker(
+                [48.10417, 20.79167],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_717f8238b878c73feb6529f05c510478 = L.popup({
+        var popup_6a1e8659389cd72161b78a491970608e = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_54769d18ee6fe832eebfe2ec8b7a22a0 = $(`<div id="html_54769d18ee6fe832eebfe2ec8b7a22a0" style="width: 100.0%; height: 100.0%;">     <b>Dublin, Ireland</b><br>     Population: 1971242<br>     Avg Monthly Salary: 2900 €<br>     Avg Cost of Living: 2700 €     </div>`)[0];
-                popup_717f8238b878c73feb6529f05c510478.setContent(html_54769d18ee6fe832eebfe2ec8b7a22a0);
+                var html_a7871548d9f86e4257b171469c9c72a8 = $(`<div id="html_a7871548d9f86e4257b171469c9c72a8" style="width: 100.0%; height: 100.0%;">     <b>Miskolc, Hungary</b><br>     Population: 283319<br>     Avg Monthly Salary: 1000 €<br>     Avg Cost of Living: 900 €     </div>`)[0];
+                popup_6a1e8659389cd72161b78a491970608e.setContent(html_a7871548d9f86e4257b171469c9c72a8);
             
         
 
-        marker_754a9d2b174d49f54f4ce45e5ab33d26.bindPopup(popup_717f8238b878c73feb6529f05c510478)
+        marker_d0bd90e0305721bd3b70fe91b68e4a94.bindPopup(popup_6a1e8659389cd72161b78a491970608e)
         ;
 
         
     
     
-            marker_754a9d2b174d49f54f4ce45e5ab33d26.bindTooltip(
+            marker_d0bd90e0305721bd3b70fe91b68e4a94.bindTooltip(
                 `<div>
-                     Dublin
+                     Miskolc
                  </div>`,
                 {
   "sticky": true,
@@ -1349,31 +1383,31 @@
             );
         
     
-            var marker_def19879bada9df7194e50f18e598d3c = L.marker(
+            var marker_2afc3b0b75e49023a68ef7d61893a315 = L.marker(
                 [51.89722, -8.47],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_75ad195eae9367c00f97fc8118c26d01 = L.popup({
+        var popup_3d14b1c336ba5ca4a4c2f4d7b7be123d = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_811d27895c24156d43ccbb670a3353c1 = $(`<div id="html_811d27895c24156d43ccbb670a3353c1" style="width: 100.0%; height: 100.0%;">     <b>Cork, Ireland</b><br>     Population: 439101<br>     Avg Monthly Salary: 2700 €<br>     Avg Cost of Living: 2600 €     </div>`)[0];
-                popup_75ad195eae9367c00f97fc8118c26d01.setContent(html_811d27895c24156d43ccbb670a3353c1);
+                var html_e108e283737ddf8fabd61f4b834006c4 = $(`<div id="html_e108e283737ddf8fabd61f4b834006c4" style="width: 100.0%; height: 100.0%;">     <b>Cork, Ireland</b><br>     Population: 439101<br>     Avg Monthly Salary: 2700 €<br>     Avg Cost of Living: 2600 €     </div>`)[0];
+                popup_3d14b1c336ba5ca4a4c2f4d7b7be123d.setContent(html_e108e283737ddf8fabd61f4b834006c4);
             
         
 
-        marker_def19879bada9df7194e50f18e598d3c.bindPopup(popup_75ad195eae9367c00f97fc8118c26d01)
+        marker_2afc3b0b75e49023a68ef7d61893a315.bindPopup(popup_3d14b1c336ba5ca4a4c2f4d7b7be123d)
         ;
 
         
     
     
-            marker_def19879bada9df7194e50f18e598d3c.bindTooltip(
+            marker_2afc3b0b75e49023a68ef7d61893a315.bindTooltip(
                 `<div>
                      Cork
                  </div>`,
@@ -1383,33 +1417,33 @@
             );
         
     
-            var marker_85173c0a70fc36df3c60579619200c6c = L.marker(
-                [45.4375, 12.33583],
+            var marker_b03ec686797960147bfdfc52b156ddb8 = L.marker(
+                [53.35, -6.26028],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_590c9a2dcd0b9074bc0fef71bbd112fa = L.popup({
+        var popup_0a563a3cfb2427efe7331be36aabcd7b = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_fbf7082851f93eb4e19413129dfd341a = $(`<div id="html_fbf7082851f93eb4e19413129dfd341a" style="width: 100.0%; height: 100.0%;">     <b>Venice, Italy</b><br>     Population: 557748<br>     Avg Monthly Salary: 1400 €<br>     Avg Cost of Living: 1500 €     </div>`)[0];
-                popup_590c9a2dcd0b9074bc0fef71bbd112fa.setContent(html_fbf7082851f93eb4e19413129dfd341a);
+                var html_a67d7a2bbfd6fbf962646dee3d115686 = $(`<div id="html_a67d7a2bbfd6fbf962646dee3d115686" style="width: 100.0%; height: 100.0%;">     <b>Dublin, Ireland</b><br>     Population: 1971242<br>     Avg Monthly Salary: 2900 €<br>     Avg Cost of Living: 2700 €     </div>`)[0];
+                popup_0a563a3cfb2427efe7331be36aabcd7b.setContent(html_a67d7a2bbfd6fbf962646dee3d115686);
             
         
 
-        marker_85173c0a70fc36df3c60579619200c6c.bindPopup(popup_590c9a2dcd0b9074bc0fef71bbd112fa)
+        marker_b03ec686797960147bfdfc52b156ddb8.bindPopup(popup_0a563a3cfb2427efe7331be36aabcd7b)
         ;
 
         
     
     
-            marker_85173c0a70fc36df3c60579619200c6c.bindTooltip(
+            marker_b03ec686797960147bfdfc52b156ddb8.bindTooltip(
                 `<div>
-                     Venice
+                     Dublin
                  </div>`,
                 {
   "sticky": true,
@@ -1417,65 +1451,31 @@
             );
         
     
-            var marker_62e4edaf8824f9d5a2976cb19e9352d0 = L.marker(
-                [41.89333, 12.48278],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_3f60f99a31500c03bfe8f41f310daf04 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_516821fa81722922d7759b32b348b0db = $(`<div id="html_516821fa81722922d7759b32b348b0db" style="width: 100.0%; height: 100.0%;">     <b>Rome, Italy</b><br>     Population: 4335555<br>     Avg Monthly Salary: 1600 €<br>     Avg Cost of Living: 1500 €     </div>`)[0];
-                popup_3f60f99a31500c03bfe8f41f310daf04.setContent(html_516821fa81722922d7759b32b348b0db);
-            
-        
-
-        marker_62e4edaf8824f9d5a2976cb19e9352d0.bindPopup(popup_3f60f99a31500c03bfe8f41f310daf04)
-        ;
-
-        
-    
-    
-            marker_62e4edaf8824f9d5a2976cb19e9352d0.bindTooltip(
-                `<div>
-                     Rome
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_7d9554d4bcd0dee22204b1abba535f2f = L.marker(
+            var marker_744f6498586b5e9d1b144b81938d9841 = L.marker(
                 [43.77139, 11.25417],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_cfcf21c4e311423f42776f9c6ec194c8 = L.popup({
+        var popup_62144b809e017b1d194bd8d4ef520a29 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_c3a2b222b4fbdb786a51d6955df95e9b = $(`<div id="html_c3a2b222b4fbdb786a51d6955df95e9b" style="width: 100.0%; height: 100.0%;">     <b>Florence, Italy</b><br>     Population: 794659<br>     Avg Monthly Salary: 1300 €<br>     Avg Cost of Living: 1300 €     </div>`)[0];
-                popup_cfcf21c4e311423f42776f9c6ec194c8.setContent(html_c3a2b222b4fbdb786a51d6955df95e9b);
+                var html_2175acf7233d3bcc992f576dc20c78ff = $(`<div id="html_2175acf7233d3bcc992f576dc20c78ff" style="width: 100.0%; height: 100.0%;">     <b>Florence, Italy</b><br>     Population: 794659<br>     Avg Monthly Salary: 1300 €<br>     Avg Cost of Living: 1300 €     </div>`)[0];
+                popup_62144b809e017b1d194bd8d4ef520a29.setContent(html_2175acf7233d3bcc992f576dc20c78ff);
             
         
 
-        marker_7d9554d4bcd0dee22204b1abba535f2f.bindPopup(popup_cfcf21c4e311423f42776f9c6ec194c8)
+        marker_744f6498586b5e9d1b144b81938d9841.bindPopup(popup_62144b809e017b1d194bd8d4ef520a29)
         ;
 
         
     
     
-            marker_7d9554d4bcd0dee22204b1abba535f2f.bindTooltip(
+            marker_744f6498586b5e9d1b144b81938d9841.bindTooltip(
                 `<div>
                      Florence
                  </div>`,
@@ -1485,99 +1485,31 @@
             );
         
     
-            var marker_30be123d3d2f870a116e496f51b94511 = L.marker(
-                [45.07917, 7.67611],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_7eb2590541922347cacccbcf49635e99 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_6f11f09df02058405ad5aa7b4c6cabba = $(`<div id="html_6f11f09df02058405ad5aa7b4c6cabba" style="width: 100.0%; height: 100.0%;">     <b>Turin, Italy</b><br>     Population: 1733674<br>     Avg Monthly Salary: 1300 €<br>     Avg Cost of Living: 950 €     </div>`)[0];
-                popup_7eb2590541922347cacccbcf49635e99.setContent(html_6f11f09df02058405ad5aa7b4c6cabba);
-            
-        
-
-        marker_30be123d3d2f870a116e496f51b94511.bindPopup(popup_7eb2590541922347cacccbcf49635e99)
-        ;
-
-        
-    
-    
-            marker_30be123d3d2f870a116e496f51b94511.bindTooltip(
-                `<div>
-                     Turin
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_67c291fe7e4fb9d74f67aef0106ce83a = L.marker(
-                [40.83583, 14.24861],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_b3a954ce1035d664db83f3e935f500b4 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_8194ee443b260ca379687793ec95bd52 = $(`<div id="html_8194ee443b260ca379687793ec95bd52" style="width: 100.0%; height: 100.0%;">     <b>Naples, Italy</b><br>     Population: 3362207<br>     Avg Monthly Salary: 1200 €<br>     Avg Cost of Living: 1000 €     </div>`)[0];
-                popup_b3a954ce1035d664db83f3e935f500b4.setContent(html_8194ee443b260ca379687793ec95bd52);
-            
-        
-
-        marker_67c291fe7e4fb9d74f67aef0106ce83a.bindPopup(popup_b3a954ce1035d664db83f3e935f500b4)
-        ;
-
-        
-    
-    
-            marker_67c291fe7e4fb9d74f67aef0106ce83a.bindTooltip(
-                `<div>
-                     Naples
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_4cb845204aab60fd2730717fe78beaa3 = L.marker(
+            var marker_1f29e0efb8d6c94e9611abd878c0902c = L.marker(
                 [45.46694, 9.19],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_1aaf22261ad2f76117e5a584fb1f1263 = L.popup({
+        var popup_743526c5ea93b79a83ec1957fb63bd24 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_62903d3a277a01f6fce0b727ee675d94 = $(`<div id="html_62903d3a277a01f6fce0b727ee675d94" style="width: 100.0%; height: 100.0%;">     <b>Milan, Italy</b><br>     Population: 4965808<br>     Avg Monthly Salary: 1700 €<br>     Avg Cost of Living: 1700 €     </div>`)[0];
-                popup_1aaf22261ad2f76117e5a584fb1f1263.setContent(html_62903d3a277a01f6fce0b727ee675d94);
+                var html_8143ae3c52f83ccabd8026ea6e49e47b = $(`<div id="html_8143ae3c52f83ccabd8026ea6e49e47b" style="width: 100.0%; height: 100.0%;">     <b>Milan, Italy</b><br>     Population: 4965808<br>     Avg Monthly Salary: 1700 €<br>     Avg Cost of Living: 1700 €     </div>`)[0];
+                popup_743526c5ea93b79a83ec1957fb63bd24.setContent(html_8143ae3c52f83ccabd8026ea6e49e47b);
             
         
 
-        marker_4cb845204aab60fd2730717fe78beaa3.bindPopup(popup_1aaf22261ad2f76117e5a584fb1f1263)
+        marker_1f29e0efb8d6c94e9611abd878c0902c.bindPopup(popup_743526c5ea93b79a83ec1957fb63bd24)
         ;
 
         
     
     
-            marker_4cb845204aab60fd2730717fe78beaa3.bindTooltip(
+            marker_1f29e0efb8d6c94e9611abd878c0902c.bindTooltip(
                 `<div>
                      Milan
                  </div>`,
@@ -1587,31 +1519,167 @@
             );
         
     
-            var marker_639b027abba0427239ddca7b87ba6605 = L.marker(
-                [56.94889, 24.10639],
+            var marker_20acb9ca0f112c8d17009acf2e06997b = L.marker(
+                [40.83583, 14.24861],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_c81c7c50d729b9585e580a185f0dd1e3 = L.popup({
+        var popup_a4a7ed7732321e86456760367079b279 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_f7c184d1e4221d49b759c2975777bbb4 = $(`<div id="html_f7c184d1e4221d49b759c2975777bbb4" style="width: 100.0%; height: 100.0%;">     <b>Riga, Latvia</b><br>     Population: 930245<br>     Avg Monthly Salary: 1300 €<br>     Avg Cost of Living: 1250 €     </div>`)[0];
-                popup_c81c7c50d729b9585e580a185f0dd1e3.setContent(html_f7c184d1e4221d49b759c2975777bbb4);
+                var html_d4829f379077fe6390444cb6261a2713 = $(`<div id="html_d4829f379077fe6390444cb6261a2713" style="width: 100.0%; height: 100.0%;">     <b>Naples, Italy</b><br>     Population: 3362207<br>     Avg Monthly Salary: 1200 €<br>     Avg Cost of Living: 1000 €     </div>`)[0];
+                popup_a4a7ed7732321e86456760367079b279.setContent(html_d4829f379077fe6390444cb6261a2713);
             
         
 
-        marker_639b027abba0427239ddca7b87ba6605.bindPopup(popup_c81c7c50d729b9585e580a185f0dd1e3)
+        marker_20acb9ca0f112c8d17009acf2e06997b.bindPopup(popup_a4a7ed7732321e86456760367079b279)
         ;
 
         
     
     
-            marker_639b027abba0427239ddca7b87ba6605.bindTooltip(
+            marker_20acb9ca0f112c8d17009acf2e06997b.bindTooltip(
+                `<div>
+                     Naples
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_10b297a571bf99618d1f60b6e95552ef = L.marker(
+                [41.89333, 12.48278],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_59759d12080791dc33b09710cace8c97 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ac531246f8337a17469770d913d3085 = $(`<div id="html_1ac531246f8337a17469770d913d3085" style="width: 100.0%; height: 100.0%;">     <b>Rome, Italy</b><br>     Population: 4335555<br>     Avg Monthly Salary: 1600 €<br>     Avg Cost of Living: 1500 €     </div>`)[0];
+                popup_59759d12080791dc33b09710cace8c97.setContent(html_1ac531246f8337a17469770d913d3085);
+            
+        
+
+        marker_10b297a571bf99618d1f60b6e95552ef.bindPopup(popup_59759d12080791dc33b09710cace8c97)
+        ;
+
+        
+    
+    
+            marker_10b297a571bf99618d1f60b6e95552ef.bindTooltip(
+                `<div>
+                     Rome
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_417c05e10de80fe2dc7054bf829af547 = L.marker(
+                [45.07917, 7.67611],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_ad38f7e11836bf557e2845bbd13cb099 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f0aa1fa82432ddb76ad0f49317f4f014 = $(`<div id="html_f0aa1fa82432ddb76ad0f49317f4f014" style="width: 100.0%; height: 100.0%;">     <b>Turin, Italy</b><br>     Population: 1733674<br>     Avg Monthly Salary: 1300 €<br>     Avg Cost of Living: 950 €     </div>`)[0];
+                popup_ad38f7e11836bf557e2845bbd13cb099.setContent(html_f0aa1fa82432ddb76ad0f49317f4f014);
+            
+        
+
+        marker_417c05e10de80fe2dc7054bf829af547.bindPopup(popup_ad38f7e11836bf557e2845bbd13cb099)
+        ;
+
+        
+    
+    
+            marker_417c05e10de80fe2dc7054bf829af547.bindTooltip(
+                `<div>
+                     Turin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_09c93cb85bac7962e3e9213333b1871f = L.marker(
+                [45.4375, 12.33583],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_250c11fb9a2c0ac93d1d86c2e454649c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_82681ae0569f86e44c718e1cf42f78b1 = $(`<div id="html_82681ae0569f86e44c718e1cf42f78b1" style="width: 100.0%; height: 100.0%;">     <b>Venice, Italy</b><br>     Population: 557748<br>     Avg Monthly Salary: 1400 €<br>     Avg Cost of Living: 1500 €     </div>`)[0];
+                popup_250c11fb9a2c0ac93d1d86c2e454649c.setContent(html_82681ae0569f86e44c718e1cf42f78b1);
+            
+        
+
+        marker_09c93cb85bac7962e3e9213333b1871f.bindPopup(popup_250c11fb9a2c0ac93d1d86c2e454649c)
+        ;
+
+        
+    
+    
+            marker_09c93cb85bac7962e3e9213333b1871f.bindTooltip(
+                `<div>
+                     Venice
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1f8b93188a8b826638c39de32339bad7 = L.marker(
+                [56.94889, 24.10639],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_5ec904c3c850e2f6d3b18840e46e19b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_98de4a49d1448fa047093c2fac843730 = $(`<div id="html_98de4a49d1448fa047093c2fac843730" style="width: 100.0%; height: 100.0%;">     <b>Riga, Latvia</b><br>     Population: 930245<br>     Avg Monthly Salary: 1300 €<br>     Avg Cost of Living: 1250 €     </div>`)[0];
+                popup_5ec904c3c850e2f6d3b18840e46e19b0.setContent(html_98de4a49d1448fa047093c2fac843730);
+            
+        
+
+        marker_1f8b93188a8b826638c39de32339bad7.bindPopup(popup_5ec904c3c850e2f6d3b18840e46e19b0)
+        ;
+
+        
+    
+    
+            marker_1f8b93188a8b826638c39de32339bad7.bindTooltip(
                 `<div>
                      Riga
                  </div>`,
@@ -1621,31 +1689,31 @@
             );
         
     
-            var marker_8e98f9f2c29874447b4da23caf3ad03e = L.marker(
+            var marker_da5b37ff55eb73b91e317da586f83e46 = L.marker(
                 [49.817, 6.133],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_a75dde8d202acc070ef191bcb678deb9 = L.popup({
+        var popup_9220e3cecd0792934cbbecbb5de69c6c = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_fdac07618254553d4255c38c8597d0ea = $(`<div id="html_fdac07618254553d4255c38c8597d0ea" style="width: 100.0%; height: 100.0%;">     <b>Luxembourg, Luxembourg</b><br>     Population: 610825<br>     Avg Monthly Salary: 4200 €<br>     Avg Cost of Living: 3300 €     </div>`)[0];
-                popup_a75dde8d202acc070ef191bcb678deb9.setContent(html_fdac07618254553d4255c38c8597d0ea);
+                var html_dbbf9e3029a8c76591b57f390006faf2 = $(`<div id="html_dbbf9e3029a8c76591b57f390006faf2" style="width: 100.0%; height: 100.0%;">     <b>Luxembourg, Luxembourg</b><br>     Population: 610825<br>     Avg Monthly Salary: 4200 €<br>     Avg Cost of Living: 3300 €     </div>`)[0];
+                popup_9220e3cecd0792934cbbecbb5de69c6c.setContent(html_dbbf9e3029a8c76591b57f390006faf2);
             
         
 
-        marker_8e98f9f2c29874447b4da23caf3ad03e.bindPopup(popup_a75dde8d202acc070ef191bcb678deb9)
+        marker_da5b37ff55eb73b91e317da586f83e46.bindPopup(popup_9220e3cecd0792934cbbecbb5de69c6c)
         ;
 
         
     
     
-            marker_8e98f9f2c29874447b4da23caf3ad03e.bindTooltip(
+            marker_da5b37ff55eb73b91e317da586f83e46.bindTooltip(
                 `<div>
                      Luxembourg
                  </div>`,
@@ -1655,31 +1723,31 @@
             );
         
     
-            var marker_e852d2dfd651288a7fee7686eabe9b6f = L.marker(
+            var marker_5c5290ea119743a2293801e31b662532 = L.marker(
                 [35.9, 14.517],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_076e5ce462eaa4c5d432ea4a027bd77a = L.popup({
+        var popup_1a322d5dcdd4c27d6ff7b2fae54b64ca = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_b80e6f6efb732436e9fda8a5720731fc = $(`<div id="html_b80e6f6efb732436e9fda8a5720731fc" style="width: 100.0%; height: 100.0%;">     <b>Malta, Malta</b><br>     Population: 456490<br>     Avg Monthly Salary: 1450 €<br>     Avg Cost of Living: 1400 €     </div>`)[0];
-                popup_076e5ce462eaa4c5d432ea4a027bd77a.setContent(html_b80e6f6efb732436e9fda8a5720731fc);
+                var html_4242043a2694308bac04a62a87009c93 = $(`<div id="html_4242043a2694308bac04a62a87009c93" style="width: 100.0%; height: 100.0%;">     <b>Malta, Malta</b><br>     Population: 456490<br>     Avg Monthly Salary: 1450 €<br>     Avg Cost of Living: 1400 €     </div>`)[0];
+                popup_1a322d5dcdd4c27d6ff7b2fae54b64ca.setContent(html_4242043a2694308bac04a62a87009c93);
             
         
 
-        marker_e852d2dfd651288a7fee7686eabe9b6f.bindPopup(popup_076e5ce462eaa4c5d432ea4a027bd77a)
+        marker_5c5290ea119743a2293801e31b662532.bindPopup(popup_1a322d5dcdd4c27d6ff7b2fae54b64ca)
         ;
 
         
     
     
-            marker_e852d2dfd651288a7fee7686eabe9b6f.bindTooltip(
+            marker_5c5290ea119743a2293801e31b662532.bindTooltip(
                 `<div>
                      Malta
                  </div>`,
@@ -1689,167 +1757,31 @@
             );
         
     
-            var marker_a9bb5cbe5600c9f8cc39fe245af08572 = L.marker(
-                [51.433, 5.483],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_517b6fc4a5f3bde5ef11ad4400a3d674 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_d92e4579b75f4a1bf857406c48ef37f2 = $(`<div id="html_d92e4579b75f4a1bf857406c48ef37f2" style="width: 100.0%; height: 100.0%;">     <b>Eindhoven, Netherlands</b><br>     Population: 760059<br>     Avg Monthly Salary: 3100 €<br>     Avg Cost of Living: 1900 €     </div>`)[0];
-                popup_517b6fc4a5f3bde5ef11ad4400a3d674.setContent(html_d92e4579b75f4a1bf857406c48ef37f2);
-            
-        
-
-        marker_a9bb5cbe5600c9f8cc39fe245af08572.bindPopup(popup_517b6fc4a5f3bde5ef11ad4400a3d674)
-        ;
-
-        
-    
-    
-            marker_a9bb5cbe5600c9f8cc39fe245af08572.bindTooltip(
-                `<div>
-                     Eindhoven
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_8e0c0b2fd9e04d5319765e2833ebe75a = L.marker(
-                [52.09083, 5.12167],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_22e97d407952dd7244425bdeca2e5254 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_0551f7089123d1b7dbd6bb5473f5b6dd = $(`<div id="html_0551f7089123d1b7dbd6bb5473f5b6dd" style="width: 100.0%; height: 100.0%;">     <b>Utrecht, Netherlands</b><br>     Population: 898712<br>     Avg Monthly Salary: 3200 €<br>     Avg Cost of Living: 2000 €     </div>`)[0];
-                popup_22e97d407952dd7244425bdeca2e5254.setContent(html_0551f7089123d1b7dbd6bb5473f5b6dd);
-            
-        
-
-        marker_8e0c0b2fd9e04d5319765e2833ebe75a.bindPopup(popup_22e97d407952dd7244425bdeca2e5254)
-        ;
-
-        
-    
-    
-            marker_8e0c0b2fd9e04d5319765e2833ebe75a.bindTooltip(
-                `<div>
-                     Utrecht
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_0515a7114a10f4de44324d5408894070 = L.marker(
-                [52.08, 4.31],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_d58c94927c132549b19868e364ef0cf7 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_d0814637ac691e85b0c6ca30eae784a3 = $(`<div id="html_d0814637ac691e85b0c6ca30eae784a3" style="width: 100.0%; height: 100.0%;">     <b>The Hague, Netherlands</b><br>     Population: 1103137<br>     Avg Monthly Salary: 3500 €<br>     Avg Cost of Living: 2000 €     </div>`)[0];
-                popup_d58c94927c132549b19868e364ef0cf7.setContent(html_d0814637ac691e85b0c6ca30eae784a3);
-            
-        
-
-        marker_0515a7114a10f4de44324d5408894070.bindPopup(popup_d58c94927c132549b19868e364ef0cf7)
-        ;
-
-        
-    
-    
-            marker_0515a7114a10f4de44324d5408894070.bindTooltip(
-                `<div>
-                     The Hague
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_267ab5e325d767c2d4295f22c0fb3a2a = L.marker(
-                [51.92, 4.48],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_cd39cb3aa53f93025f9b499195009a04 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_dc43b88a70e00c95f0d7355b958937e9 = $(`<div id="html_dc43b88a70e00c95f0d7355b958937e9" style="width: 100.0%; height: 100.0%;">     <b>Rotterdam, Netherlands</b><br>     Population: 1860582<br>     Avg Monthly Salary: 3100 €<br>     Avg Cost of Living: 2100 €     </div>`)[0];
-                popup_cd39cb3aa53f93025f9b499195009a04.setContent(html_dc43b88a70e00c95f0d7355b958937e9);
-            
-        
-
-        marker_267ab5e325d767c2d4295f22c0fb3a2a.bindPopup(popup_cd39cb3aa53f93025f9b499195009a04)
-        ;
-
-        
-    
-    
-            marker_267ab5e325d767c2d4295f22c0fb3a2a.bindTooltip(
-                `<div>
-                     Rotterdam
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_7a247b593af83a0d41572048f37f4a88 = L.marker(
+            var marker_0a50d4c2f2f2adeb570534afb55dd0c8 = L.marker(
                 [52.37278, 4.89361],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_dc4c0beeb7d23cfb256416d6b255909d = L.popup({
+        var popup_88796404afd780bce8a68c0a4072cced = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_7fa84cf474871f05b1b93f14b9fedb4a = $(`<div id="html_7fa84cf474871f05b1b93f14b9fedb4a" style="width: 100.0%; height: 100.0%;">     <b>Amsterdam, Netherlands</b><br>     Population: 2862590<br>     Avg Monthly Salary: 3750 €<br>     Avg Cost of Living: 2550 €     </div>`)[0];
-                popup_dc4c0beeb7d23cfb256416d6b255909d.setContent(html_7fa84cf474871f05b1b93f14b9fedb4a);
+                var html_c4cf9983e1adc2f8c01a08b0ff56a3ce = $(`<div id="html_c4cf9983e1adc2f8c01a08b0ff56a3ce" style="width: 100.0%; height: 100.0%;">     <b>Amsterdam, Netherlands</b><br>     Population: 2862590<br>     Avg Monthly Salary: 3750 €<br>     Avg Cost of Living: 2550 €     </div>`)[0];
+                popup_88796404afd780bce8a68c0a4072cced.setContent(html_c4cf9983e1adc2f8c01a08b0ff56a3ce);
             
         
 
-        marker_7a247b593af83a0d41572048f37f4a88.bindPopup(popup_dc4c0beeb7d23cfb256416d6b255909d)
+        marker_0a50d4c2f2f2adeb570534afb55dd0c8.bindPopup(popup_88796404afd780bce8a68c0a4072cced)
         ;
 
         
     
     
-            marker_7a247b593af83a0d41572048f37f4a88.bindTooltip(
+            marker_0a50d4c2f2f2adeb570534afb55dd0c8.bindTooltip(
                 `<div>
                      Amsterdam
                  </div>`,
@@ -1859,33 +1791,33 @@
             );
         
     
-            var marker_6d69434eee282faa42d24c0e8bf69e1b = L.marker(
-                [59.91333, 10.73889],
+            var marker_2819e1a0ff07039f05f408c829ad80cb = L.marker(
+                [51.433, 5.483],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_0ef597f7d746217224a6fcae914b555c = L.popup({
+        var popup_3cd291f7cbbb77c2f50aa8fb0d2f88fc = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_82fea910ff83ad2c73a8392a1585d820 = $(`<div id="html_82fea910ff83ad2c73a8392a1585d820" style="width: 100.0%; height: 100.0%;">     <b>Oslo, Norway</b><br>     Population: 1398715<br>     Avg Monthly Salary: 3600 €<br>     Avg Cost of Living: 2200 €     </div>`)[0];
-                popup_0ef597f7d746217224a6fcae914b555c.setContent(html_82fea910ff83ad2c73a8392a1585d820);
+                var html_802e6f27275599469ad51b14600337a2 = $(`<div id="html_802e6f27275599469ad51b14600337a2" style="width: 100.0%; height: 100.0%;">     <b>Eindhoven, Netherlands</b><br>     Population: 760059<br>     Avg Monthly Salary: 3100 €<br>     Avg Cost of Living: 1900 €     </div>`)[0];
+                popup_3cd291f7cbbb77c2f50aa8fb0d2f88fc.setContent(html_802e6f27275599469ad51b14600337a2);
             
         
 
-        marker_6d69434eee282faa42d24c0e8bf69e1b.bindPopup(popup_0ef597f7d746217224a6fcae914b555c)
+        marker_2819e1a0ff07039f05f408c829ad80cb.bindPopup(popup_3cd291f7cbbb77c2f50aa8fb0d2f88fc)
         ;
 
         
     
     
-            marker_6d69434eee282faa42d24c0e8bf69e1b.bindTooltip(
+            marker_2819e1a0ff07039f05f408c829ad80cb.bindTooltip(
                 `<div>
-                     Oslo
+                     Eindhoven
                  </div>`,
                 {
   "sticky": true,
@@ -1893,31 +1825,133 @@
             );
         
     
-            var marker_42c992b53c5f3bd0d437694eb64677fc = L.marker(
-                [60.38944, 5.33],
+            var marker_0c6aabc36a56fe6b6a6db1ed0363b8c3 = L.marker(
+                [51.92, 4.48],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_df73ab1f92c716e11acd03b73bf7f778 = L.popup({
+        var popup_86a3be8fd4ede7d0cf88c70e951b2fcf = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_f4418ee316387820375303ac7b9b473b = $(`<div id="html_f4418ee316387820375303ac7b9b473b" style="width: 100.0%; height: 100.0%;">     <b>Bergen, Norway</b><br>     Population: 419854<br>     Avg Monthly Salary: 3500 €<br>     Avg Cost of Living: 2100 €     </div>`)[0];
-                popup_df73ab1f92c716e11acd03b73bf7f778.setContent(html_f4418ee316387820375303ac7b9b473b);
+                var html_9c6637c7c7126ce319b608729ba2c73b = $(`<div id="html_9c6637c7c7126ce319b608729ba2c73b" style="width: 100.0%; height: 100.0%;">     <b>Rotterdam, Netherlands</b><br>     Population: 1860582<br>     Avg Monthly Salary: 3100 €<br>     Avg Cost of Living: 2100 €     </div>`)[0];
+                popup_86a3be8fd4ede7d0cf88c70e951b2fcf.setContent(html_9c6637c7c7126ce319b608729ba2c73b);
             
         
 
-        marker_42c992b53c5f3bd0d437694eb64677fc.bindPopup(popup_df73ab1f92c716e11acd03b73bf7f778)
+        marker_0c6aabc36a56fe6b6a6db1ed0363b8c3.bindPopup(popup_86a3be8fd4ede7d0cf88c70e951b2fcf)
         ;
 
         
     
     
-            marker_42c992b53c5f3bd0d437694eb64677fc.bindTooltip(
+            marker_0c6aabc36a56fe6b6a6db1ed0363b8c3.bindTooltip(
+                `<div>
+                     Rotterdam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_972e445c032b6ce0ab4d867382df8346 = L.marker(
+                [52.08, 4.31],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_503c33ffb03f920fbde8a095303564ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db966efdee2b653d1f221b5d6da8e71d = $(`<div id="html_db966efdee2b653d1f221b5d6da8e71d" style="width: 100.0%; height: 100.0%;">     <b>The Hague, Netherlands</b><br>     Population: 1103137<br>     Avg Monthly Salary: 3500 €<br>     Avg Cost of Living: 2000 €     </div>`)[0];
+                popup_503c33ffb03f920fbde8a095303564ae.setContent(html_db966efdee2b653d1f221b5d6da8e71d);
+            
+        
+
+        marker_972e445c032b6ce0ab4d867382df8346.bindPopup(popup_503c33ffb03f920fbde8a095303564ae)
+        ;
+
+        
+    
+    
+            marker_972e445c032b6ce0ab4d867382df8346.bindTooltip(
+                `<div>
+                     The Hague
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6f70dbe10c9ee8e082f54b09d48a0a7b = L.marker(
+                [52.09083, 5.12167],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_74af82acee3d8a0ed90336aac7f677c9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60081dd2e7a9c8c339bc6b1fca17a758 = $(`<div id="html_60081dd2e7a9c8c339bc6b1fca17a758" style="width: 100.0%; height: 100.0%;">     <b>Utrecht, Netherlands</b><br>     Population: 898712<br>     Avg Monthly Salary: 3200 €<br>     Avg Cost of Living: 2000 €     </div>`)[0];
+                popup_74af82acee3d8a0ed90336aac7f677c9.setContent(html_60081dd2e7a9c8c339bc6b1fca17a758);
+            
+        
+
+        marker_6f70dbe10c9ee8e082f54b09d48a0a7b.bindPopup(popup_74af82acee3d8a0ed90336aac7f677c9)
+        ;
+
+        
+    
+    
+            marker_6f70dbe10c9ee8e082f54b09d48a0a7b.bindTooltip(
+                `<div>
+                     Utrecht
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0f33e071c7e7cfaa7a6acd6503e6017c = L.marker(
+                [60.38944, 5.33],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_561abc1d8e1c90cf9671a081d80aae6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b052f0016e872bd20517a3f225848a1 = $(`<div id="html_7b052f0016e872bd20517a3f225848a1" style="width: 100.0%; height: 100.0%;">     <b>Bergen, Norway</b><br>     Population: 419854<br>     Avg Monthly Salary: 3500 €<br>     Avg Cost of Living: 2100 €     </div>`)[0];
+                popup_561abc1d8e1c90cf9671a081d80aae6a.setContent(html_7b052f0016e872bd20517a3f225848a1);
+            
+        
+
+        marker_0f33e071c7e7cfaa7a6acd6503e6017c.bindPopup(popup_561abc1d8e1c90cf9671a081d80aae6a)
+        ;
+
+        
+    
+    
+            marker_0f33e071c7e7cfaa7a6acd6503e6017c.bindTooltip(
                 `<div>
                      Bergen
                  </div>`,
@@ -1927,31 +1961,65 @@
             );
         
     
-            var marker_31b60a6e1b0b486f2877512ca99592af = L.marker(
-                [58.97, 5.73139],
+            var marker_1e23f535a975abb66628095801480d14 = L.marker(
+                [59.91333, 10.73889],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_45f30fec2d041d849f61617e3e565ff0 = L.popup({
+        var popup_9200d170a3bd250550729774a826a49b = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_de863f707978cd3009b1b7488faa058b = $(`<div id="html_de863f707978cd3009b1b7488faa058b" style="width: 100.0%; height: 100.0%;">     <b>Stavanger, Norway</b><br>     Population: 339690<br>     Avg Monthly Salary: 3500 €<br>     Avg Cost of Living: 2000 €     </div>`)[0];
-                popup_45f30fec2d041d849f61617e3e565ff0.setContent(html_de863f707978cd3009b1b7488faa058b);
+                var html_b8f1f029f5dffea6e86c7c05daf5cca3 = $(`<div id="html_b8f1f029f5dffea6e86c7c05daf5cca3" style="width: 100.0%; height: 100.0%;">     <b>Oslo, Norway</b><br>     Population: 1398715<br>     Avg Monthly Salary: 3600 €<br>     Avg Cost of Living: 2200 €     </div>`)[0];
+                popup_9200d170a3bd250550729774a826a49b.setContent(html_b8f1f029f5dffea6e86c7c05daf5cca3);
             
         
 
-        marker_31b60a6e1b0b486f2877512ca99592af.bindPopup(popup_45f30fec2d041d849f61617e3e565ff0)
+        marker_1e23f535a975abb66628095801480d14.bindPopup(popup_9200d170a3bd250550729774a826a49b)
         ;
 
         
     
     
-            marker_31b60a6e1b0b486f2877512ca99592af.bindTooltip(
+            marker_1e23f535a975abb66628095801480d14.bindTooltip(
+                `<div>
+                     Oslo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c227e6a55ba135dd34bad60de1eddf3c = L.marker(
+                [58.97, 5.73139],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_98af644efa68a38e295b10b0b2d22916 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58c6861f72dd387b648c4b95d270693d = $(`<div id="html_58c6861f72dd387b648c4b95d270693d" style="width: 100.0%; height: 100.0%;">     <b>Stavanger, Norway</b><br>     Population: 339690<br>     Avg Monthly Salary: 3500 €<br>     Avg Cost of Living: 2000 €     </div>`)[0];
+                popup_98af644efa68a38e295b10b0b2d22916.setContent(html_58c6861f72dd387b648c4b95d270693d);
+            
+        
+
+        marker_c227e6a55ba135dd34bad60de1eddf3c.bindPopup(popup_98af644efa68a38e295b10b0b2d22916)
+        ;
+
+        
+    
+    
+            marker_c227e6a55ba135dd34bad60de1eddf3c.bindTooltip(
                 `<div>
                      Stavanger
                  </div>`,
@@ -1961,99 +2029,31 @@
             );
         
     
-            var marker_a3a6e3ea5206bb743f14d680c56f0371 = L.marker(
-                [51.77694, 19.45472],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_00efb3b856bb6d037ca4ad3740dc1481 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_9b210153523a285bfd45ade678b01f48 = $(`<div id="html_9b210153523a285bfd45ade678b01f48" style="width: 100.0%; height: 100.0%;">     <b>Lodz, Poland</b><br>     Population: 907836<br>     Avg Monthly Salary: 1200 €<br>     Avg Cost of Living: 1200 €     </div>`)[0];
-                popup_00efb3b856bb6d037ca4ad3740dc1481.setContent(html_9b210153523a285bfd45ade678b01f48);
-            
-        
-
-        marker_a3a6e3ea5206bb743f14d680c56f0371.bindPopup(popup_00efb3b856bb6d037ca4ad3740dc1481)
-        ;
-
-        
-    
-    
-            marker_a3a6e3ea5206bb743f14d680c56f0371.bindTooltip(
-                `<div>
-                     Lodz
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_62a30c2bf0df81b9ef16b97f5a8e6c78 = L.marker(
-                [52.23, 21.01111],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_2307694999ca30dd867cb442c654e881 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_b08d69a41d76be47966e039779dfea77 = $(`<div id="html_b08d69a41d76be47966e039779dfea77" style="width: 100.0%; height: 100.0%;">     <b>Warsaw, Poland</b><br>     Population: 3181548<br>     Avg Monthly Salary: 1500 €<br>     Avg Cost of Living: 1450 €     </div>`)[0];
-                popup_2307694999ca30dd867cb442c654e881.setContent(html_b08d69a41d76be47966e039779dfea77);
-            
-        
-
-        marker_62a30c2bf0df81b9ef16b97f5a8e6c78.bindPopup(popup_2307694999ca30dd867cb442c654e881)
-        ;
-
-        
-    
-    
-            marker_62a30c2bf0df81b9ef16b97f5a8e6c78.bindTooltip(
-                `<div>
-                     Warsaw
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_f539d8a2c19d865b9046dcc7b591c80d = L.marker(
+            var marker_75efde3f72af69586a478c33bb352901 = L.marker(
                 [50.06139, 19.93722],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_afc6fb7900a3f5d6ac95b846445227bb = L.popup({
+        var popup_78ca0469725984bdec8fd6b8f1d41e91 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_71f2a5232f01482f760480905f5d26de = $(`<div id="html_71f2a5232f01482f760480905f5d26de" style="width: 100.0%; height: 100.0%;">     <b>Cracow, Poland</b><br>     Population: 1410424<br>     Avg Monthly Salary: 1400 €<br>     Avg Cost of Living: 1500 €     </div>`)[0];
-                popup_afc6fb7900a3f5d6ac95b846445227bb.setContent(html_71f2a5232f01482f760480905f5d26de);
+                var html_1c881b3fb099859fc6e91deac9ae8cf3 = $(`<div id="html_1c881b3fb099859fc6e91deac9ae8cf3" style="width: 100.0%; height: 100.0%;">     <b>Cracow, Poland</b><br>     Population: 1410424<br>     Avg Monthly Salary: 1400 €<br>     Avg Cost of Living: 1500 €     </div>`)[0];
+                popup_78ca0469725984bdec8fd6b8f1d41e91.setContent(html_1c881b3fb099859fc6e91deac9ae8cf3);
             
         
 
-        marker_f539d8a2c19d865b9046dcc7b591c80d.bindPopup(popup_afc6fb7900a3f5d6ac95b846445227bb)
+        marker_75efde3f72af69586a478c33bb352901.bindPopup(popup_78ca0469725984bdec8fd6b8f1d41e91)
         ;
 
         
     
     
-            marker_f539d8a2c19d865b9046dcc7b591c80d.bindTooltip(
+            marker_75efde3f72af69586a478c33bb352901.bindTooltip(
                 `<div>
                      Cracow
                  </div>`,
@@ -2063,33 +2063,33 @@
             );
         
     
-            var marker_16b44d2f3c484e0799ef960a33cc35b4 = L.marker(
-                [41.15, -8.61083],
+            var marker_de659214d8d26b7ce1b866673838b7e0 = L.marker(
+                [51.77694, 19.45472],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_ac4446011b3f26dd85ea7fb9961d6532 = L.popup({
+        var popup_84883c3b85b832294ed3a4d6f9ccd71c = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_83a2659a35b292e636e3f5ac406d17f6 = $(`<div id="html_83a2659a35b292e636e3f5ac406d17f6" style="width: 100.0%; height: 100.0%;">     <b>Porto, Portugal</b><br>     Population: 1280190<br>     Avg Monthly Salary: 1100 €<br>     Avg Cost of Living: 1400 €     </div>`)[0];
-                popup_ac4446011b3f26dd85ea7fb9961d6532.setContent(html_83a2659a35b292e636e3f5ac406d17f6);
+                var html_f00da20ded451cf318bc2aea43d79083 = $(`<div id="html_f00da20ded451cf318bc2aea43d79083" style="width: 100.0%; height: 100.0%;">     <b>Lodz, Poland</b><br>     Population: 907836<br>     Avg Monthly Salary: 1200 €<br>     Avg Cost of Living: 1200 €     </div>`)[0];
+                popup_84883c3b85b832294ed3a4d6f9ccd71c.setContent(html_f00da20ded451cf318bc2aea43d79083);
             
         
 
-        marker_16b44d2f3c484e0799ef960a33cc35b4.bindPopup(popup_ac4446011b3f26dd85ea7fb9961d6532)
+        marker_de659214d8d26b7ce1b866673838b7e0.bindPopup(popup_84883c3b85b832294ed3a4d6f9ccd71c)
         ;
 
         
     
     
-            marker_16b44d2f3c484e0799ef960a33cc35b4.bindTooltip(
+            marker_de659214d8d26b7ce1b866673838b7e0.bindTooltip(
                 `<div>
-                     Porto
+                     Lodz
                  </div>`,
                 {
   "sticky": true,
@@ -2097,33 +2097,33 @@
             );
         
     
-            var marker_980980d6c6571aef40512ebe19aac88b = L.marker(
-                [40.20278, -8.41389],
+            var marker_48e6606687326e2573557395f7b2b7c2 = L.marker(
+                [52.23, 21.01111],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_46861da09c9434447975f84dba470b3c = L.popup({
+        var popup_1ab5ca24aeccbc27b79eca7cfe83aa2f = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_90bd6b0408ba1b57657a073aa1e11bb1 = $(`<div id="html_90bd6b0408ba1b57657a073aa1e11bb1" style="width: 100.0%; height: 100.0%;">     <b>Coimbra, Portugal</b><br>     Population: 264656<br>     Avg Monthly Salary: 1000 €<br>     Avg Cost of Living: 1050 €     </div>`)[0];
-                popup_46861da09c9434447975f84dba470b3c.setContent(html_90bd6b0408ba1b57657a073aa1e11bb1);
+                var html_38ad07328d528a8c4e061defce10eba1 = $(`<div id="html_38ad07328d528a8c4e061defce10eba1" style="width: 100.0%; height: 100.0%;">     <b>Warsaw, Poland</b><br>     Population: 3181548<br>     Avg Monthly Salary: 1500 €<br>     Avg Cost of Living: 1450 €     </div>`)[0];
+                popup_1ab5ca24aeccbc27b79eca7cfe83aa2f.setContent(html_38ad07328d528a8c4e061defce10eba1);
             
         
 
-        marker_980980d6c6571aef40512ebe19aac88b.bindPopup(popup_46861da09c9434447975f84dba470b3c)
+        marker_48e6606687326e2573557395f7b2b7c2.bindPopup(popup_1ab5ca24aeccbc27b79eca7cfe83aa2f)
         ;
 
         
     
     
-            marker_980980d6c6571aef40512ebe19aac88b.bindTooltip(
+            marker_48e6606687326e2573557395f7b2b7c2.bindTooltip(
                 `<div>
-                     Coimbra
+                     Warsaw
                  </div>`,
                 {
   "sticky": true,
@@ -2131,65 +2131,31 @@
             );
         
     
-            var marker_d721f3dc3cd14210b32326168b4f2e8b = L.marker(
-                [38.72528, -9.15],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_c4dd386c60c48198ba0f0101a9eb7949 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_6072ed8d10d985ba03efb029be3ad43e = $(`<div id="html_6072ed8d10d985ba03efb029be3ad43e" style="width: 100.0%; height: 100.0%;">     <b>Lisbon, Portugal</b><br>     Population: 3008000<br>     Avg Monthly Salary: 1220 €<br>     Avg Cost of Living: 1600 €     </div>`)[0];
-                popup_c4dd386c60c48198ba0f0101a9eb7949.setContent(html_6072ed8d10d985ba03efb029be3ad43e);
-            
-        
-
-        marker_d721f3dc3cd14210b32326168b4f2e8b.bindPopup(popup_c4dd386c60c48198ba0f0101a9eb7949)
-        ;
-
-        
-    
-    
-            marker_d721f3dc3cd14210b32326168b4f2e8b.bindTooltip(
-                `<div>
-                     Lisbon
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_ab85fd11a8b5b337c3026cc1e0688348 = L.marker(
+            var marker_aa0148a4034d732a20dfa86cebea27b8 = L.marker(
                 [41.55111, -8.42833],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_0afbf53d979af759a57e135b579f0224 = L.popup({
+        var popup_d4214bb297229f00be1a15523cb1e2df = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_b27e716b0e296e9b7e2a42ad2ac7d7cc = $(`<div id="html_b27e716b0e296e9b7e2a42ad2ac7d7cc" style="width: 100.0%; height: 100.0%;">     <b>Braga, Portugal</b><br>     Population: 247719<br>     Avg Monthly Salary: 1000 €<br>     Avg Cost of Living: 1100 €     </div>`)[0];
-                popup_0afbf53d979af759a57e135b579f0224.setContent(html_b27e716b0e296e9b7e2a42ad2ac7d7cc);
+                var html_d125e2b67f140935ba9cdef7831fb965 = $(`<div id="html_d125e2b67f140935ba9cdef7831fb965" style="width: 100.0%; height: 100.0%;">     <b>Braga, Portugal</b><br>     Population: 247719<br>     Avg Monthly Salary: 1000 €<br>     Avg Cost of Living: 1100 €     </div>`)[0];
+                popup_d4214bb297229f00be1a15523cb1e2df.setContent(html_d125e2b67f140935ba9cdef7831fb965);
             
         
 
-        marker_ab85fd11a8b5b337c3026cc1e0688348.bindPopup(popup_0afbf53d979af759a57e135b579f0224)
+        marker_aa0148a4034d732a20dfa86cebea27b8.bindPopup(popup_d4214bb297229f00be1a15523cb1e2df)
         ;
 
         
     
     
-            marker_ab85fd11a8b5b337c3026cc1e0688348.bindTooltip(
+            marker_aa0148a4034d732a20dfa86cebea27b8.bindTooltip(
                 `<div>
                      Braga
                  </div>`,
@@ -2199,31 +2165,133 @@
             );
         
     
-            var marker_a1b8df0247878300b8505260781a1b38 = L.marker(
-                [45.7, 21.233],
+            var marker_04e2f2dd7830d9799f4fcb728d3f51fb = L.marker(
+                [40.20278, -8.41389],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_004152d77a19bb3cd3f8d3cdd76894ad = L.popup({
+        var popup_8faabd472146de4a606e8d36a9e2a6cc = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_713cdc228b4735b0afc30dd7f909b7e9 = $(`<div id="html_713cdc228b4735b0afc30dd7f909b7e9" style="width: 100.0%; height: 100.0%;">     <b>Giroc, Romania</b><br>     Population: 351851<br>     Avg Monthly Salary: 900 €<br>     Avg Cost of Living: 900 €     </div>`)[0];
-                popup_004152d77a19bb3cd3f8d3cdd76894ad.setContent(html_713cdc228b4735b0afc30dd7f909b7e9);
+                var html_8a4c7a12fc5f3baa05c8316878fcc01b = $(`<div id="html_8a4c7a12fc5f3baa05c8316878fcc01b" style="width: 100.0%; height: 100.0%;">     <b>Coimbra, Portugal</b><br>     Population: 264656<br>     Avg Monthly Salary: 1000 €<br>     Avg Cost of Living: 1050 €     </div>`)[0];
+                popup_8faabd472146de4a606e8d36a9e2a6cc.setContent(html_8a4c7a12fc5f3baa05c8316878fcc01b);
             
         
 
-        marker_a1b8df0247878300b8505260781a1b38.bindPopup(popup_004152d77a19bb3cd3f8d3cdd76894ad)
+        marker_04e2f2dd7830d9799f4fcb728d3f51fb.bindPopup(popup_8faabd472146de4a606e8d36a9e2a6cc)
         ;
 
         
     
     
-            marker_a1b8df0247878300b8505260781a1b38.bindTooltip(
+            marker_04e2f2dd7830d9799f4fcb728d3f51fb.bindTooltip(
+                `<div>
+                     Coimbra
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_95b36536322eb1e50939d8d8bea7e8d3 = L.marker(
+                [38.72528, -9.15],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_f244d9efbef475e00a58b20bc4b62435 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f55456e342b989fdabb5845b01f43454 = $(`<div id="html_f55456e342b989fdabb5845b01f43454" style="width: 100.0%; height: 100.0%;">     <b>Lisbon, Portugal</b><br>     Population: 3008000<br>     Avg Monthly Salary: 1220 €<br>     Avg Cost of Living: 1600 €     </div>`)[0];
+                popup_f244d9efbef475e00a58b20bc4b62435.setContent(html_f55456e342b989fdabb5845b01f43454);
+            
+        
+
+        marker_95b36536322eb1e50939d8d8bea7e8d3.bindPopup(popup_f244d9efbef475e00a58b20bc4b62435)
+        ;
+
+        
+    
+    
+            marker_95b36536322eb1e50939d8d8bea7e8d3.bindTooltip(
+                `<div>
+                     Lisbon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cb1dff16f828a9e4344006daf12c2004 = L.marker(
+                [41.15, -8.61083],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_04bbd6e1cd3c48cce554e4293332835b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a52adbd15f4131d050d652d2b15d4148 = $(`<div id="html_a52adbd15f4131d050d652d2b15d4148" style="width: 100.0%; height: 100.0%;">     <b>Porto, Portugal</b><br>     Population: 1280190<br>     Avg Monthly Salary: 1100 €<br>     Avg Cost of Living: 1400 €     </div>`)[0];
+                popup_04bbd6e1cd3c48cce554e4293332835b.setContent(html_a52adbd15f4131d050d652d2b15d4148);
+            
+        
+
+        marker_cb1dff16f828a9e4344006daf12c2004.bindPopup(popup_04bbd6e1cd3c48cce554e4293332835b)
+        ;
+
+        
+    
+    
+            marker_cb1dff16f828a9e4344006daf12c2004.bindTooltip(
+                `<div>
+                     Porto
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_34e6eeca605645745f2ced0766cbb2cd = L.marker(
+                [45.7, 21.233],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_04cf65815183bd50e1dc6d7155436c8a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d55d9428c925964222a21e7e8208487f = $(`<div id="html_d55d9428c925964222a21e7e8208487f" style="width: 100.0%; height: 100.0%;">     <b>Giroc, Romania</b><br>     Population: 351851<br>     Avg Monthly Salary: 900 €<br>     Avg Cost of Living: 900 €     </div>`)[0];
+                popup_04cf65815183bd50e1dc6d7155436c8a.setContent(html_d55d9428c925964222a21e7e8208487f);
+            
+        
+
+        marker_34e6eeca605645745f2ced0766cbb2cd.bindPopup(popup_04cf65815183bd50e1dc6d7155436c8a)
+        ;
+
+        
+    
+    
+            marker_34e6eeca605645745f2ced0766cbb2cd.bindTooltip(
                 `<div>
                      Giroc
                  </div>`,
@@ -2233,31 +2301,31 @@
             );
         
     
-            var marker_f3c3cff0bd8689bd414e6e6005fba30d = L.marker(
+            var marker_a19d9ce7659698f7542a5c756308132d = L.marker(
                 [48.14389, 17.10972],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_db189aed478488411b2d80eb94aaef2d = L.popup({
+        var popup_07454875f99e66b784cf6f64d11d0311 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_990d26f04d7a0b7058d57f08a1fce40d = $(`<div id="html_990d26f04d7a0b7058d57f08a1fce40d" style="width: 100.0%; height: 100.0%;">     <b>Bratislava, Slovak Republic</b><br>     Population: 440611<br>     Avg Monthly Salary: 1200 €<br>     Avg Cost of Living: 1250 €     </div>`)[0];
-                popup_db189aed478488411b2d80eb94aaef2d.setContent(html_990d26f04d7a0b7058d57f08a1fce40d);
+                var html_7ec643df9dcdb7275d1339e1380dd585 = $(`<div id="html_7ec643df9dcdb7275d1339e1380dd585" style="width: 100.0%; height: 100.0%;">     <b>Bratislava, Slovak Republic</b><br>     Population: 440611<br>     Avg Monthly Salary: 1200 €<br>     Avg Cost of Living: 1250 €     </div>`)[0];
+                popup_07454875f99e66b784cf6f64d11d0311.setContent(html_7ec643df9dcdb7275d1339e1380dd585);
             
         
 
-        marker_f3c3cff0bd8689bd414e6e6005fba30d.bindPopup(popup_db189aed478488411b2d80eb94aaef2d)
+        marker_a19d9ce7659698f7542a5c756308132d.bindPopup(popup_07454875f99e66b784cf6f64d11d0311)
         ;
 
         
     
     
-            marker_f3c3cff0bd8689bd414e6e6005fba30d.bindTooltip(
+            marker_a19d9ce7659698f7542a5c756308132d.bindTooltip(
                 `<div>
                      Bratislava
                  </div>`,
@@ -2267,31 +2335,31 @@
             );
         
     
-            var marker_a9a5abc892f6cb5896cba7a1520f93d3 = L.marker(
+            var marker_96d5faa1abf0b41dd57b65ad25307f39 = L.marker(
                 [46.05139, 14.50611],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_a4635c396380ec372a570362bb6312dd = L.popup({
+        var popup_b0c605a1119b1da83f765ada80bc32cb = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_4adafe0c1966229d127041a4850fc2c1 = $(`<div id="html_4adafe0c1966229d127041a4850fc2c1" style="width: 100.0%; height: 100.0%;">     <b>Ljubljana, Slovenia</b><br>     Population: 292988<br>     Avg Monthly Salary: 1600 €<br>     Avg Cost of Living: 1550 €     </div>`)[0];
-                popup_a4635c396380ec372a570362bb6312dd.setContent(html_4adafe0c1966229d127041a4850fc2c1);
+                var html_101b3d61ed831552e8b6dc897a23e848 = $(`<div id="html_101b3d61ed831552e8b6dc897a23e848" style="width: 100.0%; height: 100.0%;">     <b>Ljubljana, Slovenia</b><br>     Population: 292988<br>     Avg Monthly Salary: 1600 €<br>     Avg Cost of Living: 1550 €     </div>`)[0];
+                popup_b0c605a1119b1da83f765ada80bc32cb.setContent(html_101b3d61ed831552e8b6dc897a23e848);
             
         
 
-        marker_a9a5abc892f6cb5896cba7a1520f93d3.bindPopup(popup_a4635c396380ec372a570362bb6312dd)
+        marker_96d5faa1abf0b41dd57b65ad25307f39.bindPopup(popup_b0c605a1119b1da83f765ada80bc32cb)
         ;
 
         
     
     
-            marker_a9a5abc892f6cb5896cba7a1520f93d3.bindTooltip(
+            marker_96d5faa1abf0b41dd57b65ad25307f39.bindTooltip(
                 `<div>
                      Ljubljana
                  </div>`,
@@ -2301,31 +2369,31 @@
             );
         
     
-            var marker_11003bb3a96a0768cf26aa29e750ac6c = L.marker(
+            var marker_974579fc185c18d25e73bf8db39c2880 = L.marker(
                 [41.383, 2.183],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_2aec8082366ab0b3ffd6799cd3b36350 = L.popup({
+        var popup_21894dda522ff02514f7dc85941e7235 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_fbb6d357ce30054bf8c70c6dc95de4bf = $(`<div id="html_fbb6d357ce30054bf8c70c6dc95de4bf" style="width: 100.0%; height: 100.0%;">     <b>Barcelona, Spain</b><br>     Population: 5034925<br>     Avg Monthly Salary: 2094 €<br>     Avg Cost of Living: 1630 €     </div>`)[0];
-                popup_2aec8082366ab0b3ffd6799cd3b36350.setContent(html_fbb6d357ce30054bf8c70c6dc95de4bf);
+                var html_664316adc72bfe39c1e004cb67d0a179 = $(`<div id="html_664316adc72bfe39c1e004cb67d0a179" style="width: 100.0%; height: 100.0%;">     <b>Barcelona, Spain</b><br>     Population: 5034925<br>     Avg Monthly Salary: 2094 €<br>     Avg Cost of Living: 1630 €     </div>`)[0];
+                popup_21894dda522ff02514f7dc85941e7235.setContent(html_664316adc72bfe39c1e004cb67d0a179);
             
         
 
-        marker_11003bb3a96a0768cf26aa29e750ac6c.bindPopup(popup_2aec8082366ab0b3ffd6799cd3b36350)
+        marker_974579fc185c18d25e73bf8db39c2880.bindPopup(popup_21894dda522ff02514f7dc85941e7235)
         ;
 
         
     
     
-            marker_11003bb3a96a0768cf26aa29e750ac6c.bindTooltip(
+            marker_974579fc185c18d25e73bf8db39c2880.bindTooltip(
                 `<div>
                      Barcelona
                  </div>`,
@@ -2335,33 +2403,33 @@
             );
         
     
-            var marker_c50986a68721d9200a829ddd44e4e3e2 = L.marker(
-                [39.47, -0.37639],
+            var marker_f2a927ea09b07e57371aac67892f41bf = L.marker(
+                [40.5, -3.667],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_13a454a8baca2cf498a5385bc0416b7b = L.popup({
+        var popup_a1cf40f086fcee16b76a32842f29d6c5 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_9f06113fb862823e4e08661e6227d9a1 = $(`<div id="html_9f06113fb862823e4e08661e6227d9a1" style="width: 100.0%; height: 100.0%;">     <b>Valencia, Spain</b><br>     Population: 1748142<br>     Avg Monthly Salary: 2400 €<br>     Avg Cost of Living: 1300 €     </div>`)[0];
-                popup_13a454a8baca2cf498a5385bc0416b7b.setContent(html_9f06113fb862823e4e08661e6227d9a1);
+                var html_d05310afc7606f8fff912f3319c156b3 = $(`<div id="html_d05310afc7606f8fff912f3319c156b3" style="width: 100.0%; height: 100.0%;">     <b>Madrid, Spain</b><br>     Population: 6882461<br>     Avg Monthly Salary: 2271 €<br>     Avg Cost of Living: 1589 €     </div>`)[0];
+                popup_a1cf40f086fcee16b76a32842f29d6c5.setContent(html_d05310afc7606f8fff912f3319c156b3);
             
         
 
-        marker_c50986a68721d9200a829ddd44e4e3e2.bindPopup(popup_13a454a8baca2cf498a5385bc0416b7b)
+        marker_f2a927ea09b07e57371aac67892f41bf.bindPopup(popup_a1cf40f086fcee16b76a32842f29d6c5)
         ;
 
         
     
     
-            marker_c50986a68721d9200a829ddd44e4e3e2.bindTooltip(
+            marker_f2a927ea09b07e57371aac67892f41bf.bindTooltip(
                 `<div>
-                     Valencia
+                     Madrid
                  </div>`,
                 {
   "sticky": true,
@@ -2369,65 +2437,31 @@
             );
         
     
-            var marker_dccd0939d3d9b523da92dbd8d73f27ec = L.marker(
-                [37.39, -5.99],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_10ce463d83c0e0e4ddfd5fbc57457ad9 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_6cd7c667bb08504e75704096040ef0fc = $(`<div id="html_6cd7c667bb08504e75704096040ef0fc" style="width: 100.0%; height: 100.0%;">     <b>Seville, Spain</b><br>     Population: 1549641<br>     Avg Monthly Salary: 2300 €<br>     Avg Cost of Living: 1150 €     </div>`)[0];
-                popup_10ce463d83c0e0e4ddfd5fbc57457ad9.setContent(html_6cd7c667bb08504e75704096040ef0fc);
-            
-        
-
-        marker_dccd0939d3d9b523da92dbd8d73f27ec.bindPopup(popup_10ce463d83c0e0e4ddfd5fbc57457ad9)
-        ;
-
-        
-    
-    
-            marker_dccd0939d3d9b523da92dbd8d73f27ec.bindTooltip(
-                `<div>
-                     Seville
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_4c80e02f6957b1b70c0d03324a3c8417 = L.marker(
+            var marker_6d776cd4696ed6ae3be8858e4383171f = L.marker(
                 [36.71944, -4.42],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_71de9ee511ddaf84c3891b34aece44d0 = L.popup({
+        var popup_da230ac28dcefc66f1de5c00c2fc96fd = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_5d93680c779ef1e64f063c688c187fd5 = $(`<div id="html_5d93680c779ef1e64f063c688c187fd5" style="width: 100.0%; height: 100.0%;">     <b>Malaga, Spain</b><br>     Population: 869096<br>     Avg Monthly Salary: 2200 €<br>     Avg Cost of Living: 1400 €     </div>`)[0];
-                popup_71de9ee511ddaf84c3891b34aece44d0.setContent(html_5d93680c779ef1e64f063c688c187fd5);
+                var html_3adeefde3e5e92fe20ecb55a9638af24 = $(`<div id="html_3adeefde3e5e92fe20ecb55a9638af24" style="width: 100.0%; height: 100.0%;">     <b>Malaga, Spain</b><br>     Population: 869096<br>     Avg Monthly Salary: 2200 €<br>     Avg Cost of Living: 1400 €     </div>`)[0];
+                popup_da230ac28dcefc66f1de5c00c2fc96fd.setContent(html_3adeefde3e5e92fe20ecb55a9638af24);
             
         
 
-        marker_4c80e02f6957b1b70c0d03324a3c8417.bindPopup(popup_71de9ee511ddaf84c3891b34aece44d0)
+        marker_6d776cd4696ed6ae3be8858e4383171f.bindPopup(popup_da230ac28dcefc66f1de5c00c2fc96fd)
         ;
 
         
     
     
-            marker_4c80e02f6957b1b70c0d03324a3c8417.bindTooltip(
+            marker_6d776cd4696ed6ae3be8858e4383171f.bindTooltip(
                 `<div>
                      Malaga
                  </div>`,
@@ -2437,33 +2471,33 @@
             );
         
     
-            var marker_a9ba6ee84acc5660d884b929d02982f1 = L.marker(
-                [55.60583, 13.03583],
+            var marker_f7bdf8111c3f36ca05e5e9ec1c5a2e99 = L.marker(
+                [37.39, -5.99],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_4ccb8944766695ac239781fe52a1a8e1 = L.popup({
+        var popup_bafdb37876efb54978cf11b076c26f9e = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_26e632ea02c4d2b937e5a28e7c8d6c18 = $(`<div id="html_26e632ea02c4d2b937e5a28e7c8d6c18" style="width: 100.0%; height: 100.0%;">     <b>Malmo, Sweden</b><br>     Population: 680335<br>     Avg Monthly Salary: 2400 €<br>     Avg Cost of Living: 2000 €     </div>`)[0];
-                popup_4ccb8944766695ac239781fe52a1a8e1.setContent(html_26e632ea02c4d2b937e5a28e7c8d6c18);
+                var html_ef41f199884d95428dcf864c6817f564 = $(`<div id="html_ef41f199884d95428dcf864c6817f564" style="width: 100.0%; height: 100.0%;">     <b>Seville, Spain</b><br>     Population: 1549641<br>     Avg Monthly Salary: 2300 €<br>     Avg Cost of Living: 1150 €     </div>`)[0];
+                popup_bafdb37876efb54978cf11b076c26f9e.setContent(html_ef41f199884d95428dcf864c6817f564);
             
         
 
-        marker_a9ba6ee84acc5660d884b929d02982f1.bindPopup(popup_4ccb8944766695ac239781fe52a1a8e1)
+        marker_f7bdf8111c3f36ca05e5e9ec1c5a2e99.bindPopup(popup_bafdb37876efb54978cf11b076c26f9e)
         ;
 
         
     
     
-            marker_a9ba6ee84acc5660d884b929d02982f1.bindTooltip(
+            marker_f7bdf8111c3f36ca05e5e9ec1c5a2e99.bindTooltip(
                 `<div>
-                     Malmo
+                     Seville
                  </div>`,
                 {
   "sticky": true,
@@ -2471,31 +2505,65 @@
             );
         
     
-            var marker_e6fa42f3f00f68673375a325dd9420ce = L.marker(
-                [57.7075, 11.9675],
+            var marker_4adb4e16ec736263324cf47b1a8a1fcd = L.marker(
+                [39.47, -0.37639],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_494e94fa8d9b05ae6e45056ea94c6cf4 = L.popup({
+        var popup_67e5c3d5f0af8b86bf1aca53d0f8b2e9 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_bc7fd42c503a691d5f7ac63083b958c4 = $(`<div id="html_bc7fd42c503a691d5f7ac63083b958c4" style="width: 100.0%; height: 100.0%;">     <b>Gothenburg, Sweden</b><br>     Population: 1037675<br>     Avg Monthly Salary: 2500 €<br>     Avg Cost of Living: 2100 €     </div>`)[0];
-                popup_494e94fa8d9b05ae6e45056ea94c6cf4.setContent(html_bc7fd42c503a691d5f7ac63083b958c4);
+                var html_6eca4b7e12d9e76ccf2231d97422cef7 = $(`<div id="html_6eca4b7e12d9e76ccf2231d97422cef7" style="width: 100.0%; height: 100.0%;">     <b>Valencia, Spain</b><br>     Population: 1748142<br>     Avg Monthly Salary: 2400 €<br>     Avg Cost of Living: 1300 €     </div>`)[0];
+                popup_67e5c3d5f0af8b86bf1aca53d0f8b2e9.setContent(html_6eca4b7e12d9e76ccf2231d97422cef7);
             
         
 
-        marker_e6fa42f3f00f68673375a325dd9420ce.bindPopup(popup_494e94fa8d9b05ae6e45056ea94c6cf4)
+        marker_4adb4e16ec736263324cf47b1a8a1fcd.bindPopup(popup_67e5c3d5f0af8b86bf1aca53d0f8b2e9)
         ;
 
         
     
     
-            marker_e6fa42f3f00f68673375a325dd9420ce.bindTooltip(
+            marker_4adb4e16ec736263324cf47b1a8a1fcd.bindTooltip(
+                `<div>
+                     Valencia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4ed6cf57e4e050c7a4bde3b255c24bdd = L.marker(
+                [57.7075, 11.9675],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_499b2d9791bcc599531b61587cd6a659 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f6b020ad363090a723bf0c6eb6d3ef3d = $(`<div id="html_f6b020ad363090a723bf0c6eb6d3ef3d" style="width: 100.0%; height: 100.0%;">     <b>Gothenburg, Sweden</b><br>     Population: 1037675<br>     Avg Monthly Salary: 2500 €<br>     Avg Cost of Living: 2100 €     </div>`)[0];
+                popup_499b2d9791bcc599531b61587cd6a659.setContent(html_f6b020ad363090a723bf0c6eb6d3ef3d);
+            
+        
+
+        marker_4ed6cf57e4e050c7a4bde3b255c24bdd.bindPopup(popup_499b2d9791bcc599531b61587cd6a659)
+        ;
+
+        
+    
+    
+            marker_4ed6cf57e4e050c7a4bde3b255c24bdd.bindTooltip(
                 `<div>
                      Gothenburg
                  </div>`,
@@ -2505,31 +2573,65 @@
             );
         
     
-            var marker_4c4d344dfa6528d163e2f6f58927866f = L.marker(
-                [59.32944, 18.06861],
+            var marker_d645ea1b9b6d4bc723e0fe339bb5a612 = L.marker(
+                [55.60583, 13.03583],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_59c6814a8f2d1d4ba4bcac520ec7260c = L.popup({
+        var popup_e4dcad5f636cc3696d5573917ffb4b37 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_6e467e4613dbeb59ace36f550451f7e2 = $(`<div id="html_6e467e4613dbeb59ace36f550451f7e2" style="width: 100.0%; height: 100.0%;">     <b>Stockholm, Sweden</b><br>     Population: 2344124<br>     Avg Monthly Salary: 2700 €<br>     Avg Cost of Living: 2300 €     </div>`)[0];
-                popup_59c6814a8f2d1d4ba4bcac520ec7260c.setContent(html_6e467e4613dbeb59ace36f550451f7e2);
+                var html_2c96c0e903781c41144718c588e3eb9c = $(`<div id="html_2c96c0e903781c41144718c588e3eb9c" style="width: 100.0%; height: 100.0%;">     <b>Malmo, Sweden</b><br>     Population: 680335<br>     Avg Monthly Salary: 2400 €<br>     Avg Cost of Living: 2000 €     </div>`)[0];
+                popup_e4dcad5f636cc3696d5573917ffb4b37.setContent(html_2c96c0e903781c41144718c588e3eb9c);
             
         
 
-        marker_4c4d344dfa6528d163e2f6f58927866f.bindPopup(popup_59c6814a8f2d1d4ba4bcac520ec7260c)
+        marker_d645ea1b9b6d4bc723e0fe339bb5a612.bindPopup(popup_e4dcad5f636cc3696d5573917ffb4b37)
         ;
 
         
     
     
-            marker_4c4d344dfa6528d163e2f6f58927866f.bindTooltip(
+            marker_d645ea1b9b6d4bc723e0fe339bb5a612.bindTooltip(
+                `<div>
+                     Malmo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d5596a168b95d2855ed37ef2b13d8526 = L.marker(
+                [59.32944, 18.06861],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_df8a82b7e4c3ac312ca509de58b32a59 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be93f7665384ce1f467a2989d6f15484 = $(`<div id="html_be93f7665384ce1f467a2989d6f15484" style="width: 100.0%; height: 100.0%;">     <b>Stockholm, Sweden</b><br>     Population: 2344124<br>     Avg Monthly Salary: 2700 €<br>     Avg Cost of Living: 2300 €     </div>`)[0];
+                popup_df8a82b7e4c3ac312ca509de58b32a59.setContent(html_be93f7665384ce1f467a2989d6f15484);
+            
+        
+
+        marker_d5596a168b95d2855ed37ef2b13d8526.bindPopup(popup_df8a82b7e4c3ac312ca509de58b32a59)
+        ;
+
+        
+    
+    
+            marker_d5596a168b95d2855ed37ef2b13d8526.bindTooltip(
                 `<div>
                      Stockholm
                  </div>`,
@@ -2539,99 +2641,31 @@
             );
         
     
-            var marker_344dba5db7a82f70b787045f82cd5752 = L.marker(
-                [47.37444, 8.54111],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_23151731453686b0172931f706d8d6e9 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_9712624ddb8f9fb064c6d97dd5f55651 = $(`<div id="html_9712624ddb8f9fb064c6d97dd5f55651" style="width: 100.0%; height: 100.0%;">     <b>Zurich, Switzerland</b><br>     Population: 1384728<br>     Avg Monthly Salary: 6636 €<br>     Avg Cost of Living: 4862 €     </div>`)[0];
-                popup_23151731453686b0172931f706d8d6e9.setContent(html_9712624ddb8f9fb064c6d97dd5f55651);
-            
-        
-
-        marker_344dba5db7a82f70b787045f82cd5752.bindPopup(popup_23151731453686b0172931f706d8d6e9)
-        ;
-
-        
-    
-    
-            marker_344dba5db7a82f70b787045f82cd5752.bindTooltip(
-                `<div>
-                     Zurich
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_0b08fbcbfec2c8153f0f38e4ca1e2517 = L.marker(
-                [46.20167, 6.14694],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_c26136320b6ff74e08094b5bc69591bb = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_13486d2029f875051793b6a2b47b59b0 = $(`<div id="html_13486d2029f875051793b6a2b47b59b0" style="width: 100.0%; height: 100.0%;">     <b>Geneva, Switzerland</b><br>     Population: 597269<br>     Avg Monthly Salary: 5794 €<br>     Avg Cost of Living: 4263 €     </div>`)[0];
-                popup_c26136320b6ff74e08094b5bc69591bb.setContent(html_13486d2029f875051793b6a2b47b59b0);
-            
-        
-
-        marker_0b08fbcbfec2c8153f0f38e4ca1e2517.bindPopup(popup_c26136320b6ff74e08094b5bc69591bb)
-        ;
-
-        
-    
-    
-            marker_0b08fbcbfec2c8153f0f38e4ca1e2517.bindTooltip(
-                `<div>
-                     Geneva
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_f512e7d7cfddc9ae9b4c4fc2c211566f = L.marker(
+            var marker_8ebc5826832ebf2dcee78fbc14d5c143 = L.marker(
                 [47.55472, 7.59056],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_9e0665216776f68c1b56472ea39868ea = L.popup({
+        var popup_1005d460786e384f1688e38637229acd = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_290b4cdb505116f5557979e379b3e4b0 = $(`<div id="html_290b4cdb505116f5557979e379b3e4b0" style="width: 100.0%; height: 100.0%;">     <b>Basel, Switzerland</b><br>     Population: 550152<br>     Avg Monthly Salary: 6366 €<br>     Avg Cost of Living: 4239 €     </div>`)[0];
-                popup_9e0665216776f68c1b56472ea39868ea.setContent(html_290b4cdb505116f5557979e379b3e4b0);
+                var html_abb6801405e63b16c19c0490dcb48502 = $(`<div id="html_abb6801405e63b16c19c0490dcb48502" style="width: 100.0%; height: 100.0%;">     <b>Basel, Switzerland</b><br>     Population: 550152<br>     Avg Monthly Salary: 6366 €<br>     Avg Cost of Living: 4239 €     </div>`)[0];
+                popup_1005d460786e384f1688e38637229acd.setContent(html_abb6801405e63b16c19c0490dcb48502);
             
         
 
-        marker_f512e7d7cfddc9ae9b4c4fc2c211566f.bindPopup(popup_9e0665216776f68c1b56472ea39868ea)
+        marker_8ebc5826832ebf2dcee78fbc14d5c143.bindPopup(popup_1005d460786e384f1688e38637229acd)
         ;
 
         
     
     
-            marker_f512e7d7cfddc9ae9b4c4fc2c211566f.bindTooltip(
+            marker_8ebc5826832ebf2dcee78fbc14d5c143.bindTooltip(
                 `<div>
                      Basel
                  </div>`,
@@ -2641,31 +2675,99 @@
             );
         
     
-            var marker_40c533e65f3fb7156031b465a845ea3a = L.marker(
-                [39.917, 32.85],
+            var marker_5f29faac93423b8cecf16144fde4fb56 = L.marker(
+                [46.20167, 6.14694],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_b974837eca7354556fca01342a713cf7 = L.popup({
+        var popup_eabcbe4889cee636e8a5599009c1150c = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_8d37d3dac71a3f81ecfda8a30b4f4148 = $(`<div id="html_8d37d3dac71a3f81ecfda8a30b4f4148" style="width: 100.0%; height: 100.0%;">     <b>Adana, Turkiye</b><br>     Population: 1074543<br>     Avg Monthly Salary: 750 €<br>     Avg Cost of Living: 800 €     </div>`)[0];
-                popup_b974837eca7354556fca01342a713cf7.setContent(html_8d37d3dac71a3f81ecfda8a30b4f4148);
+                var html_b385b7f7e15bd8c7363d6e1adde93c96 = $(`<div id="html_b385b7f7e15bd8c7363d6e1adde93c96" style="width: 100.0%; height: 100.0%;">     <b>Geneva, Switzerland</b><br>     Population: 597269<br>     Avg Monthly Salary: 5794 €<br>     Avg Cost of Living: 4263 €     </div>`)[0];
+                popup_eabcbe4889cee636e8a5599009c1150c.setContent(html_b385b7f7e15bd8c7363d6e1adde93c96);
             
         
 
-        marker_40c533e65f3fb7156031b465a845ea3a.bindPopup(popup_b974837eca7354556fca01342a713cf7)
+        marker_5f29faac93423b8cecf16144fde4fb56.bindPopup(popup_eabcbe4889cee636e8a5599009c1150c)
         ;
 
         
     
     
-            marker_40c533e65f3fb7156031b465a845ea3a.bindTooltip(
+            marker_5f29faac93423b8cecf16144fde4fb56.bindTooltip(
+                `<div>
+                     Geneva
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5702dc2041d4d18696c874fd8d38ed59 = L.marker(
+                [47.37444, 8.54111],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_bc96a55f7d268fbb21a438b562091bd9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc43dd5a42d4f6a056938bf4478f8894 = $(`<div id="html_bc43dd5a42d4f6a056938bf4478f8894" style="width: 100.0%; height: 100.0%;">     <b>Zurich, Switzerland</b><br>     Population: 1384728<br>     Avg Monthly Salary: 6636 €<br>     Avg Cost of Living: 4862 €     </div>`)[0];
+                popup_bc96a55f7d268fbb21a438b562091bd9.setContent(html_bc43dd5a42d4f6a056938bf4478f8894);
+            
+        
+
+        marker_5702dc2041d4d18696c874fd8d38ed59.bindPopup(popup_bc96a55f7d268fbb21a438b562091bd9)
+        ;
+
+        
+    
+    
+            marker_5702dc2041d4d18696c874fd8d38ed59.bindTooltip(
+                `<div>
+                     Zurich
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a484aa432ff1242b7ff5e8f26a9ff9b6 = L.marker(
+                [39.917, 32.85],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_59155becfde0481484b2ae2fa7b36b86 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc36a11dcbed9a396508b8e73bf0c29e = $(`<div id="html_cc36a11dcbed9a396508b8e73bf0c29e" style="width: 100.0%; height: 100.0%;">     <b>Adana, Turkiye</b><br>     Population: 1074543<br>     Avg Monthly Salary: 750 €<br>     Avg Cost of Living: 800 €     </div>`)[0];
+                popup_59155becfde0481484b2ae2fa7b36b86.setContent(html_cc36a11dcbed9a396508b8e73bf0c29e);
+            
+        
+
+        marker_a484aa432ff1242b7ff5e8f26a9ff9b6.bindPopup(popup_59155becfde0481484b2ae2fa7b36b86)
+        ;
+
+        
+    
+    
+            marker_a484aa432ff1242b7ff5e8f26a9ff9b6.bindTooltip(
                 `<div>
                      Adana
                  </div>`,
@@ -2675,31 +2777,31 @@
             );
         
     
-            var marker_43f57859aef3f4a1e991fd199f5d3918 = L.marker(
+            var marker_a3a3509d3869f82b0557faf1934eef5a = L.marker(
                 [39.917, 32.85],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_637b4c8464a8324f1da5a6bf3a0f0b49 = L.popup({
+        var popup_500ee83d13113a2deae283768161bbe3 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_273c4b81e2ef19b4c7987754f03a857c = $(`<div id="html_273c4b81e2ef19b4c7987754f03a857c" style="width: 100.0%; height: 100.0%;">     <b>Ankara, Turkiye</b><br>     Population: 4843511<br>     Avg Monthly Salary: 900 €<br>     Avg Cost of Living: 900 €     </div>`)[0];
-                popup_637b4c8464a8324f1da5a6bf3a0f0b49.setContent(html_273c4b81e2ef19b4c7987754f03a857c);
+                var html_cc47f99879ee76a88d98217bff54b9c8 = $(`<div id="html_cc47f99879ee76a88d98217bff54b9c8" style="width: 100.0%; height: 100.0%;">     <b>Ankara, Turkiye</b><br>     Population: 4843511<br>     Avg Monthly Salary: 900 €<br>     Avg Cost of Living: 900 €     </div>`)[0];
+                popup_500ee83d13113a2deae283768161bbe3.setContent(html_cc47f99879ee76a88d98217bff54b9c8);
             
         
 
-        marker_43f57859aef3f4a1e991fd199f5d3918.bindPopup(popup_637b4c8464a8324f1da5a6bf3a0f0b49)
+        marker_a3a3509d3869f82b0557faf1934eef5a.bindPopup(popup_500ee83d13113a2deae283768161bbe3)
         ;
 
         
     
     
-            marker_43f57859aef3f4a1e991fd199f5d3918.bindTooltip(
+            marker_a3a3509d3869f82b0557faf1934eef5a.bindTooltip(
                 `<div>
                      Ankara
                  </div>`,
@@ -2709,99 +2811,31 @@
             );
         
     
-            var marker_3abedfa36ea20616f864d063eed0e1ce = L.marker(
-                [53.7975, -1.54361],
+            var marker_9d54930f676352c910fc3723e1efaadb = L.marker(
+                [55.95333, -3.18917],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_7a4150872b78c5211d619e90882761b9 = L.popup({
+        var popup_23828f8d6060b2d41b4f6749a4308ced = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_d8cbf9db3ef5ab74f3665cb46317116e = $(`<div id="html_d8cbf9db3ef5ab74f3665cb46317116e" style="width: 100.0%; height: 100.0%;">     <b>Leeds, United Kingdom</b><br>     Population: 2641062<br>     Avg Monthly Salary: 2300 €<br>     Avg Cost of Living: 2000 €     </div>`)[0];
-                popup_7a4150872b78c5211d619e90882761b9.setContent(html_d8cbf9db3ef5ab74f3665cb46317116e);
+                var html_bdbae431dddf99fc57f43b9d3f1928e4 = $(`<div id="html_bdbae431dddf99fc57f43b9d3f1928e4" style="width: 100.0%; height: 100.0%;">     <b>Edinburgh, United Kingdom</b><br>     Population: 907580<br>     Avg Monthly Salary: 2500 €<br>     Avg Cost of Living: 2050 €     </div>`)[0];
+                popup_23828f8d6060b2d41b4f6749a4308ced.setContent(html_bdbae431dddf99fc57f43b9d3f1928e4);
             
         
 
-        marker_3abedfa36ea20616f864d063eed0e1ce.bindPopup(popup_7a4150872b78c5211d619e90882761b9)
+        marker_9d54930f676352c910fc3723e1efaadb.bindPopup(popup_23828f8d6060b2d41b4f6749a4308ced)
         ;
 
         
     
     
-            marker_3abedfa36ea20616f864d063eed0e1ce.bindTooltip(
-                `<div>
-                     Leeds
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_7f172adc555044bc54010a7f3b2fa8f0 = L.marker(
-                [51.50722, -0.1275],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_b102346ff4336a2b0d7a8fedbf9c1419 = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_dfdbd6b158329aece7acbec87c1b1ca0 = $(`<div id="html_dfdbd6b158329aece7acbec87c1b1ca0" style="width: 100.0%; height: 100.0%;">     <b>London, United Kingdom</b><br>     Population: 12396541<br>     Avg Monthly Salary: 2750 €<br>     Avg Cost of Living: 2800 €     </div>`)[0];
-                popup_b102346ff4336a2b0d7a8fedbf9c1419.setContent(html_dfdbd6b158329aece7acbec87c1b1ca0);
-            
-        
-
-        marker_7f172adc555044bc54010a7f3b2fa8f0.bindPopup(popup_b102346ff4336a2b0d7a8fedbf9c1419)
-        ;
-
-        
-    
-    
-            marker_7f172adc555044bc54010a7f3b2fa8f0.bindTooltip(
-                `<div>
-                     London
-                 </div>`,
-                {
-  "sticky": true,
-}
-            );
-        
-    
-            var marker_460871c3590c41b900d7550e242b2bfd = L.marker(
-                [55.95, -3.183],
-                {
-}
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
-        
-    
-        var popup_c273568066dc6c7966216e7cfd8fdb5f = L.popup({
-  "maxWidth": 300,
-});
-
-        
-            
-                var html_74c7c474b4a20a7e81f3ecd765000fc3 = $(`<div id="html_74c7c474b4a20a7e81f3ecd765000fc3" style="width: 100.0%; height: 100.0%;">     <b>Edinburgh, United Kingdom</b><br>     Population: 907580<br>     Avg Monthly Salary: 2500 €<br>     Avg Cost of Living: 2050 €     </div>`)[0];
-                popup_c273568066dc6c7966216e7cfd8fdb5f.setContent(html_74c7c474b4a20a7e81f3ecd765000fc3);
-            
-        
-
-        marker_460871c3590c41b900d7550e242b2bfd.bindPopup(popup_c273568066dc6c7966216e7cfd8fdb5f)
-        ;
-
-        
-    
-    
-            marker_460871c3590c41b900d7550e242b2bfd.bindTooltip(
+            marker_9d54930f676352c910fc3723e1efaadb.bindTooltip(
                 `<div>
                      Edinburgh
                  </div>`,
@@ -2811,31 +2845,99 @@
             );
         
     
-            var marker_81bd7553bfc385ce0551d9648109e120 = L.marker(
-                [53.40722, -2.99167],
+            var marker_c6a2afaf78d6eba1c9b2143c042c04dd = L.marker(
+                [55.86111, -4.25],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_25a2d54db717fb99a66a41f7eb494293 = L.popup({
+        var popup_def7dc8db6a66115554b824c5fad8ae6 = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_b3762c408a2e56c95461ea7df6d18b9c = $(`<div id="html_b3762c408a2e56c95461ea7df6d18b9c" style="width: 100.0%; height: 100.0%;">     <b>Liverpool, United Kingdom</b><br>     Population: 1544216<br>     Avg Monthly Salary: 2250 €<br>     Avg Cost of Living: 1800 €     </div>`)[0];
-                popup_25a2d54db717fb99a66a41f7eb494293.setContent(html_b3762c408a2e56c95461ea7df6d18b9c);
+                var html_1380d5f5cc455e7dc5ba19b9bf7e33a1 = $(`<div id="html_1380d5f5cc455e7dc5ba19b9bf7e33a1" style="width: 100.0%; height: 100.0%;">     <b>Glasgow, United Kingdom</b><br>     Population: 1845020<br>     Avg Monthly Salary: 2300 €<br>     Avg Cost of Living: 1950 €     </div>`)[0];
+                popup_def7dc8db6a66115554b824c5fad8ae6.setContent(html_1380d5f5cc455e7dc5ba19b9bf7e33a1);
             
         
 
-        marker_81bd7553bfc385ce0551d9648109e120.bindPopup(popup_25a2d54db717fb99a66a41f7eb494293)
+        marker_c6a2afaf78d6eba1c9b2143c042c04dd.bindPopup(popup_def7dc8db6a66115554b824c5fad8ae6)
         ;
 
         
     
     
-            marker_81bd7553bfc385ce0551d9648109e120.bindTooltip(
+            marker_c6a2afaf78d6eba1c9b2143c042c04dd.bindTooltip(
+                `<div>
+                     Glasgow
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e8547b5fc442e7a7c0ede8ec4ceb5b58 = L.marker(
+                [53.7975, -1.54361],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_4037fc6662fe71e7a94c3662e6546c52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c13fc67443a07b5b5a2ee61920713d9 = $(`<div id="html_1c13fc67443a07b5b5a2ee61920713d9" style="width: 100.0%; height: 100.0%;">     <b>Leeds, United Kingdom</b><br>     Population: 2641062<br>     Avg Monthly Salary: 2300 €<br>     Avg Cost of Living: 2000 €     </div>`)[0];
+                popup_4037fc6662fe71e7a94c3662e6546c52.setContent(html_1c13fc67443a07b5b5a2ee61920713d9);
+            
+        
+
+        marker_e8547b5fc442e7a7c0ede8ec4ceb5b58.bindPopup(popup_4037fc6662fe71e7a94c3662e6546c52)
+        ;
+
+        
+    
+    
+            marker_e8547b5fc442e7a7c0ede8ec4ceb5b58.bindTooltip(
+                `<div>
+                     Leeds
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_21b79b9d435c14d9c1f66d5f88239047 = L.marker(
+                [53.40722, -2.99167],
+                {
+}
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
+        
+    
+        var popup_42c75146516d7790bbb0c7b8d959cbab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a5c08dbb204bb6603c2bdc4a2c81672 = $(`<div id="html_8a5c08dbb204bb6603c2bdc4a2c81672" style="width: 100.0%; height: 100.0%;">     <b>Liverpool, United Kingdom</b><br>     Population: 1544216<br>     Avg Monthly Salary: 2250 €<br>     Avg Cost of Living: 1800 €     </div>`)[0];
+                popup_42c75146516d7790bbb0c7b8d959cbab.setContent(html_8a5c08dbb204bb6603c2bdc4a2c81672);
+            
+        
+
+        marker_21b79b9d435c14d9c1f66d5f88239047.bindPopup(popup_42c75146516d7790bbb0c7b8d959cbab)
+        ;
+
+        
+    
+    
+            marker_21b79b9d435c14d9c1f66d5f88239047.bindTooltip(
                 `<div>
                      Liverpool
                  </div>`,
@@ -2845,38 +2947,41 @@
             );
         
     
-            var marker_6f9827ad95909cd4032919455ebb75b7 = L.marker(
-                [55.86111, -4.25],
+            var marker_bf431677bd4700baf08178d48d9c0e49 = L.marker(
+                [51.50722, -0.1275],
                 {
 }
-            ).addTo(map_5136c4998cd03b6fb7da76c834f74199);
+            ).addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
     
-        var popup_904ff4f03466d3e138e17b3d3846bbd6 = L.popup({
+        var popup_d3bac6e053455514224a74a947e0bf8a = L.popup({
   "maxWidth": 300,
 });
 
         
             
-                var html_b62ede517c7f72bb8b8364290018ddc9 = $(`<div id="html_b62ede517c7f72bb8b8364290018ddc9" style="width: 100.0%; height: 100.0%;">     <b>Glasgow, United Kingdom</b><br>     Population: 1845020<br>     Avg Monthly Salary: 2300 €<br>     Avg Cost of Living: 1950 €     </div>`)[0];
-                popup_904ff4f03466d3e138e17b3d3846bbd6.setContent(html_b62ede517c7f72bb8b8364290018ddc9);
+                var html_4e8524ba06dc2a027a773aa72543cf08 = $(`<div id="html_4e8524ba06dc2a027a773aa72543cf08" style="width: 100.0%; height: 100.0%;">     <b>London, United Kingdom</b><br>     Population: 12396541<br>     Avg Monthly Salary: 2750 €<br>     Avg Cost of Living: 2800 €     </div>`)[0];
+                popup_d3bac6e053455514224a74a947e0bf8a.setContent(html_4e8524ba06dc2a027a773aa72543cf08);
             
         
 
-        marker_6f9827ad95909cd4032919455ebb75b7.bindPopup(popup_904ff4f03466d3e138e17b3d3846bbd6)
+        marker_bf431677bd4700baf08178d48d9c0e49.bindPopup(popup_d3bac6e053455514224a74a947e0bf8a)
         ;
 
         
     
     
-            marker_6f9827ad95909cd4032919455ebb75b7.bindTooltip(
+            marker_bf431677bd4700baf08178d48d9c0e49.bindTooltip(
                 `<div>
-                     Glasgow
+                     London
                  </div>`,
                 {
   "sticky": true,
 }
             );
+        
+    
+            tile_layer_ce219fe617495af91925d591c18ec16c.addTo(map_a001536f7fbe0c77e61ceecd6189b328);
         
 </script>
 </html>
